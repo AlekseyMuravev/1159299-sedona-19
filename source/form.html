@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body>
+  <div class="page">
+    <header class="page__header header">
+      <nav class="header__nav main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">Фото и видео</a>
+          </li>
+          <li class="site-list__item">
+            <a>Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Html academy</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__toggle toggle" type="button"></button>
+      <div class="header__nav">
+        <div class="header__logo">
+          <a href="index.html">
+            <img src="" alt="Sedona" width="" height="">
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="promo">
+        <h1>Оставьте свой отзыв</h1>
+        <h2>Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
+        </h2>
+      </div>
+      <form class="form" action="">
+        <div class="form__name">
+          <label>Имя*:
+            <input type="text" name="name" value="Петр">
+          </label>
+          <label>Фамилия*:
+            <input type="text" name="surname" value="Иванов">
+          </label>
+          <label>Отчество:
+            <input type="text" name="patronymic" value="Александрович">
+          </label>
+        </div>
+        <div class="form__contacts">
+          <label>Контактный телефон*:
+            <input type="tel" name="phone" value="Введиет телефон">
+          </label>
+          <label>Электронная почта*:
+            <input type="email" name="email" value="Введиет e-mail">
+          </label>
+        </div>
+        <div class="form__impression">
+          <label>
+            <input type="radio" name="impression" checked>
+            Скорее отрицательное</label>
+          <label>
+            <input type="radio" name="impression">
+            Скорее положительное</label>
+          <label>
+            <input type="radio" name="impression">
+            Затрудняюсь ответить</label>
+        </div>
+        <div class="form__attractions">
+          <label>
+            <input type="checkbox" name="bridge-devil" checked>
+            Мост дьвола</label>
+          <label>
+            <input type="checkbox" name="mountain-bell" checked>
+            Гора-Колокол</label>
+          <label>
+            <input type="checkbox" name="slide-park" checked>
+            Слайд-парк</label>
+          <label>
+            <input type="checkbox" name="red-rocks">
+            Красные скалы</label>
+        </div>
+        <div class="form__review">
+          <label>Опишите свои эмоции:
+            <textarea name="reviews" cols="30" rows="10"></textarea>
+          </label>
+        </div>
+        <button class="form__button-submit button-submit" type="submit">Отправить отзыв</button>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <a class="page-footer__hashtag" href="#">#visitsedona</a>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--twitter" title="Наш твитер" href="https://twitter.com/"
+            aria-label="Наш твитер"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/" aria-label="Наш фейсбук"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" title="Наш ютуб" href="https://www.youtube.com/"
+            aria-label="Наш ютуб"></a>
+        </li>
+      </ul>
+      <div class="copyright">
+        <p>Разработано</p>
+        <a title="Сайт Html Academy" href="">
+          <img class="copyright__image" src="" alt="Иконка HTML Academy">
+        </a>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
