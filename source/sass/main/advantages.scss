@@ -1,0 +1,21 @@
+@media (min-width: 320px) {
+  .advantages {
+    width: 320px;
+  }
+}
+
+@media (min-width: 768px) {
+  .advantages {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .advantages {
+    width: 1200px;
+  }
+}
+
+.advantages__list-plase {
+  margin: 0;
+}

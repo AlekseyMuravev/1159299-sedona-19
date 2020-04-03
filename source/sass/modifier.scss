@@ -1,0 +1,31 @@
+.promo--big {
+  width: 320px;
+  height: 389px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: -225px 0;
+  background-color: $block-color-blue;
+}
+
+.list-place__item--filling {
+  color: #000000;
+  background-color: #ffffff;
+  padding: 26px 41px 42px 21px;
+}
+
+.list-place__item--grey {
+  color: #000000;
+  background-color: $block-color-grey;
+}
+
+.form-block--name input {
+  flex-grow: 1;
+}
+
+.form-block--contacts input {
+  margin-left: 0;
+  width: 222px;
+}
+
+.form-block--contacts label {
+  margin: 0 0 12px 22px;
+}

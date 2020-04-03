@@ -1,0 +1,21 @@
+.photo-item {
+  padding: 22px 20px 0;
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+}
+
+.photo-item__image {
+  line-height: 0;
+  margin-bottom: 22px;
+}
+
+.photo-item h3 {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.photo-item p {
+  line-height: 24px;
+  text-transform: none;
+  margin-bottom: 0;
+}
