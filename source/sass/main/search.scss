@@ -1,0 +1,27 @@
+@media (min-width: 320px) {
+  .search {
+    width: 320px;
+  }
+}
+
+@media (min-width: 768px) {
+  .search {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .search {
+    width: 1200px;
+  }
+}
+
+.search {
+  padding: 0;
+  margin: 0;
+}
+
+
+.search__search-question {
+  margin: 0;
+}

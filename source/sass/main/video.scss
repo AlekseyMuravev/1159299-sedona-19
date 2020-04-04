@@ -1,0 +1,22 @@
+@media (min-width: 320px) {
+  .video {
+    width: 320px;
+  }
+}
+
+@media (min-width: 768px) {
+  .video {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .video {
+    width: 1200px;
+  }
+}
+
+
+.video__question {
+  margin: 0;
+}
