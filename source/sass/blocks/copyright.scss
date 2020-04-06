@@ -1,4 +1,10 @@
 .copyright {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 146px;
+}
+
+.copyright p{
+  font-size: $font-size-paragraph;
+  margin-top: 0;
 }

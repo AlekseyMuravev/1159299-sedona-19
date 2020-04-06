@@ -1,5 +1,7 @@
+@import "variable.scss";
 @import "fonts.scss";
-@import "teg.scss";
+@import "../img/sprite.svg";
+@import "base.scss";
 @import "header/header.scss";
 @import "main/advantages.scss";
 @import "main/list-place.scss";
@@ -26,5 +28,7 @@
 @import "blocks/copyright";
 @import "blocks/photo-item.scss";
 @import "blocks/like.scss";
+@import "blocks/radio.scss";
+@import "blocks/checkbox.scss";
+@import "blocks/textarea-review.scss";
 @import "modifier.scss";
-@import "colors.scss";

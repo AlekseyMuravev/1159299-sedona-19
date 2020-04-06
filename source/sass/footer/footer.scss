@@ -1,6 +1,5 @@
 .footer {
   text-align: center;
-  width: 320px;
   padding: 31px 85px;
 }
 
@@ -12,7 +11,27 @@
 }
 
 .footer__social {
-  display: flex;
-  padding: 0;
   margin: 35px 0 40px;
+}
+
+@media (max-width: $tablet) {
+  .footer {
+    width: $mobile;
+  }
+}
+
+@media (min-width: $tablet) {
+  .footer {
+    width: $tablet;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop) {
+  .footer {
+    width: $desktop;
+    margin: 0 auto;
+  }
 }

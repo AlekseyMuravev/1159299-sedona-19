@@ -8,6 +8,11 @@ html {
   box-sizing: inherit;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
@@ -22,33 +27,4 @@ body {
 
 a {
   text-decoration: none;
-}
-
-h1 {
-  font: inherit;
-  font-weight: bold;
-  margin-top: 0;
-}
-
-h2 {
-  font: inherit;
-  font-size: 14px;
-  margin-top: 0;
-}
-
-h3 {
-  font: inherit;
-  font-weight: bold;
-  margin-top: 0;
-}
-
-p {
-  font: inherit;
-  font-size: 14px;
-  line-height: 21px;
-  margin-top: 0;
-}
-
-li {
-  list-style: none;
 }

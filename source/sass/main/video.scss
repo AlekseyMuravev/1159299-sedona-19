@@ -1,21 +1,21 @@
-@media (min-width: 320px) {
+@media (max-width: $tablet) {
   .video {
-    width: 320px;
+    width: $mobile;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .video {
-    width: 768px;
+    width: $tablet;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop) {
   .video {
-    width: 1200px;
+    width: $desktop;
+    margin: 0 auto;
   }
 }
-
 
 .video__question {
   margin: 0;

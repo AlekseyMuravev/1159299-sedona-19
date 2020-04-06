@@ -1,6 +1,12 @@
-@media (min-width: 320px) {
+@media (max-width: 768px) {
   .search {
     width: 320px;
+  }
+  .map-tablet {
+    display: none;
+  }
+  .map-desktop {
+    display: none;
   }
 }
 
@@ -8,17 +14,35 @@
   .search {
     width: 768px;
   }
+  .map-mobile {
+  display: none;
+  }
+  .map-tablet {
+    display: block;
+  }
+  .map-desktop {
+    display: none;
+  }
 }
 
 @media (min-width: 1200px) {
   .search {
     width: 1200px;
+    margin: 0 auto;
   }
+  .map-mobile {
+    display: none;
+    }
+    .map-tablet {
+      display: none;
+    }
+    .map-desktop {
+      display: block;
+    }
 }
 
 .search {
   padding: 0;
-  margin: 0;
 }
 
 

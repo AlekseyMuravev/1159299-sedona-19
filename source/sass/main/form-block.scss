@@ -1,11 +1,13 @@
 .form-block {
-  width: 320px;
+  width: $mobile;
   padding: 24px 20px 5px;
   border-bottom: 1px solid rgba(1, 1, 1, 0.2);
 }
 
 .form-block h3 {
+  font-size: $font-size-heading;
   text-align: center;
+  margin: 0 0 20px;
 }
 
 .form-block label {
@@ -13,21 +15,34 @@
   justify-content: space-between;
   align-items: baseline;
   font-size: 14px;
+  line-height: 26px;
   color: #333333;
-  width: 320px;
+  width: 280px;
 }
 
 .form-block input {
   font-size: 18px;
   font-weight: bold;
+  line-height: 26px;
   color: #000000;
-  flex-basis: auto;
   background-color: #f2f2f2;
   border: none;
-  padding: 20px 0 17px 22px;
+  padding: 18px 0 14px 22px;
   margin: 0 0 20px 14px;
 }
 
-.form-block__button {
+.form-block__input-contact {
   display: flex;
+  width: 280px;
+}
+
+.form-block__image {
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+  padding: 20px;
+}
+
+.form-block__textarea {
+  margin: 0 0 41px;
 }

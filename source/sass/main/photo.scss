@@ -1,24 +1,25 @@
-@media (min-width: 320px) {
+@media (max-width: $tablet) {
   .photo {
-    width: 320px;
+    width: $mobile;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .photo {
-    width: 768px;
+    width: $tablet;
+    margin: 0;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop) {
   .photo {
-    width: 1200px;
+    width: $desktop;
+    margin: 0 auto;
   }
 }
 
 .photo {
   padding: 0;
-  margin: 0;
 }
 
 .photo__list {

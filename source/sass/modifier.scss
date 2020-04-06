@@ -1,31 +1,100 @@
-.promo--big {
-  width: 320px;
-  height: 389px;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: -225px 0;
-  background-color: #81b3d2;
+@media (max-width: 768px) {
+  .promo--big {
+    width: 320px;
+    height: 389px;
+    background-image: url("../img/bg-back-mobile-index@1x.jpg");
+    background-position: 50% 0;
+    background-color: $palette-primary;
+  }
+  .introduction--index {
+    position: relative;
+    &::after {
+      content: "";
+      background-image: url("../img/bg-triangle.svg");
+      position: absolute;
+      left: 0;
+      bottom: -18px;
+      width: 320px;
+      height: 37px;
+    }
+  }
 }
 
-.list-place__item--filling {
-  color: #000000;
-  background-color: #ffffff;
-  padding: 26px 41px 42px 21px;
+@media (min-width: 768px) {
+  .promo--big {
+    width: 768px;
+    height: 520px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: 0 0;
+    background-color: $palette-primary;
+  }
+}
+
+@media (min-width: 1200px) {
+  .promo--big {
+    width: 1200px;
+    height: 520px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-color: $palette-primary;
+  }
 }
 
 .list-place__item--grey {
-  color: #000000;
+  position: relative;
+  color: $color-heading;
   background-color: #eeeeee;
 }
 
+.list-place__item--grey p {
+  color: $color-paragraph;
+}
+
+.city-filling__border {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 280px;
+  height: 1px;
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+}
+
 .form-block--name input {
-  flex-grow: 1;
+  width: 100%;
 }
 
 .form-block--contacts input {
   margin-left: 0;
-  width: 222px;
+  width: 100%;
 }
 
 .form-block--contacts label {
   margin: 0 0 12px 22px;
+}
+
+.radio,
+.checkbox {
+  position: absolute;
+  appearance: none;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.form-block--impression .radio-label,
+.form-block--attractions .checkbox-label  {
+  color: $color-heading;
+  width: 300px;
+  position: relative;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: none;
+  padding: 16px 0 0 70px;
+  margin-bottom: 35px;
+  cursor: pointer;
+}
+
+
+.form-block--review {
+  border-bottom: none;
 }

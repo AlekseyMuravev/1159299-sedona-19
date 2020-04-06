@@ -1,4 +1,13 @@
-.toggle {
-  border: none;
-  background-color: transparent;
+@media (max-width: $tablet) {
+  .toggle {
+    border: none;
+    background-color: transparent;
+  }
 }
+
+@media (min-width: $tablet) {
+  .toggle {
+    display: none;
+  }
+}
+
