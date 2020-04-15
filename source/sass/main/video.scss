@@ -1,18 +1,11 @@
-@media (max-width: $tablet) {
-  .video {
-    width: $mobile;
-  }
-}
-
-@media (min-width: $tablet) {
-  .video {
-    width: $tablet;
-  }
+.video {
+  min-width: $mobile;
+  background-color: $color-text-on-primary;
 }
 
 @media (min-width: $desktop) {
   .video {
-    width: $desktop;
+    max-width: $desktop;
     margin: 0 auto;
   }
 }

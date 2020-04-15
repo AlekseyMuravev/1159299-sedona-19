@@ -18,7 +18,7 @@
         <li class="site-list__item">
           <a href="photo.html">Фото и видео</a>
         </li>
-        <li class="site-list__item">
+        <li class="site-list__item site-list__item--active">
           <a>Форма отзыва</a>
         </li>
         <li class="site-list__item">
@@ -26,17 +26,18 @@
         </li>
       </ul>
     </nav>
-    <div class="header__menu-toggle">
-      <div class="header__logo logo">
-        <a href="index.html">
-          <img class="logo__mobile" src="../img/logo-sedona-mobile.svg" alt="Sedona" width="" height="">
-          <img class="logo__tablet" src="../img/logo-sedona-tablet.svg" alt="Sedona" width="" height="">
-          <img class="logo__desktop" src="../img/logo-sedona-desktop.svg" alt="Sedona" width="" height="">
-        </a>
-      </div>
+    <div class="header__logo logo">
+      <a>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img class="logo__mobile" src="img/logo-sedona-mobile.svg" alt="Sedona" width="" height="">
+        </picture>
+      </a>
     </div>
+    <div class="header__menu-toggle"></div>
     <button class="header__toggle toggle" type="button">
-      <img src="../img/icon-menu.svg" alt="">
+      <img src="img/icon-menu.svg" alt="">
     </button>
   </header>
   <main>
@@ -48,62 +49,71 @@
       </p>
     </div>
     <form class="form" action="https://echo.htmlacademy.ru">
-      <fieldset class="form__fieldset fieldset">
-        <div class="form-block form-block--name">
-          <h3>Представьтесь:</h3>
-          <label>Имя*:
-            <input type="text" name="name" value="Петр">
-          </label>
-          <label>Фамилия*:
-            <input type="text" name="surname" value="Иванов">
-          </label>
-          <label>Отчество:
-            <input type="text" name="patronymic" value="Александрович">
-          </label>
-        </div>
-        <div class="form-block form-block--contacts">
-          <h3>Контактная информация:</h3>
-          <label for="phone">Контактный телефон*:</label>
-          <div class="form-block__input-contact">
-            <input type="tel" id="phone" name="phone" value="Введиет телефон">
-            <div class="form-block__image">
-              <img src="img/icon-phone.svg" alt="">
-            </div>
+      <div class="form-block form-block--impression">
+        <h3>Ваше общее впечатление:</h3>
+        <input class="radio" id="impression" type="radio" name="impression" checked>
+        <label class="radio-label" for="impression">Скорее положительное</label>
+        <input class="radio" id="impression-tw" type="radio" name="impression">
+        <label class="radio-label" for="impression-tw">Скорее отрицательное</label>
+        <input class="radio" id="impression-th" type="radio" name="impression">
+        <label class="radio-label" for="impression-th">Затрудняюсь ответить</label>
+      </div>
+      <div class="form-block form-block--name">
+        <h3>Представьтесь:</h3>
+        <label>Имя*:
+          <input type="text" name="name" value="Петр">
+        </label>
+        <label>Фамилия*:
+          <input type="text" name="surname" value="Иванов">
+        </label>
+        <label>Отчество:
+          <input type="text" name="patronymic" value="Александрович">
+        </label>
+      </div>
+      <div class="form-block form-block--contacts">
+        <h3>Контактная информация:</h3>
+        <label for="phone">Контактный телефон*:</label>
+        <div class="form-block__input-contact">
+          <input type="tel" id="phone" name="phone" value="Введиет телефон">
+          <div class="form-block__image">
+            <img src="img/icon-phone.svg" alt="">
           </div>
-          <label for="email">Электронная почта*:</label>
-          <div class="form-block__input-contact"><input type="email" id="email" name="email" value="Введиет e-mail">
-            <div class="form-block__image">
-              <img src="img/icon-mail.svg" alt="">
-            </div>
+        </div>
+        <label for="email">Электронная почта*:</label>
+        <div class="form-block__input-contact"><input type="email" id="email" name="email" value="Введиет e-mail">
+          <div class="form-block__image">
+            <img src="img/icon-mail.svg" alt="">
           </div>
         </div>
-        <div class="form-block form-block--impression">
-          <h3>Ваше общее впечатление:</h3>
-          <input class="radio" id="impression" type="radio" name="impression" checked>
-          <label class="radio-label" for="impression">Скорее положительное</label>
-          <input class="radio" id="impression-tw" type="radio" name="impression">
-          <label class="radio-label" for="impression-tw">Скорее отрицательное</label>
-          <input class="radio" id="impression-th" type="radio" name="impression">
-          <label class="radio-label" for="impression-th">Затрудняюсь ответить</label>
-        </div>
-        <div class="form-block form-block--attractions">
-          <h3>Посещенные достопримечательности:</h3>
-          <input class="checkbox" id="bridge-devil" type="checkbox" name="bridge-devil" checked>
-          <label class="checkbox-label" for="bridge-devil">Мост дьвола</label>
-          <input class="checkbox" id="mountain-bell" type="checkbox" name="mountain-bell" checked>
-          <label class="checkbox-label" for="mountain-bell">Гора-Колокол</label>
-          <input class="checkbox" id="slide-park" type="checkbox" name="slide-park" checked>
-          <label class="checkbox-label" for="slide-park">Слайд-парк</label>
-          <input class="checkbox" id="red-rocks" type="checkbox" name="red-rocks">
-          <label class="checkbox-label" for="red-rocks">Красные скалы</label>
-        </div>
-        <div class="form-block form-block--review">
-          <h3>Опишите свои эмоции:</h3>
-          <textarea class="form-block__textarea textarea-review" name="reviews" cols="26"
-            rows="5">Опишите подробно все свои восторги</textarea>
-        </div>
-        <button class="form__button-submit button" type="submit">Отправить отзыв</button>
-      </fieldset>
+      </div>
+      <div class="form-block form-block--attractions">
+        <h3>Посещенные достопримечательности:</h3>
+        <input class="checkbox" id="bridge-devil" type="checkbox" name="bridge-devil" checked>
+        <label class="checkbox-label" for="bridge-devil">Мост дьвола</label>
+        <input class="checkbox" id="mountain-bell" type="checkbox" name="mountain-bell" checked>
+        <label class="checkbox-label" for="mountain-bell">Гора-Колокол</label>
+        <input class="checkbox" id="slide-park" type="checkbox" name="slide-park" checked>
+        <label class="checkbox-label" for="slide-park">Слайд-парк</label>
+        <input class="checkbox" id="red-rocks" type="checkbox" name="red-rocks">
+        <label class="checkbox-label" for="red-rocks">Красные скалы</label>
+      </div>
+      <div class="form-block form-block--review">
+        <h3>Опишите свои эмоции:</h3>
+        <textarea class="form-block__textarea textarea-review" name="reviews" cols="26"
+          rows="5">Опишите подробно все свои восторги</textarea>
+      </div>
+      <button class="form__button-submit button" type="submit">Отправить отзыв</button>
+      <div class="form__modal modal">
+        <h3>Что-то пошло не так!</h3>
+        <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal__button button modal__button--error" type="button">Ок</button>
+      </div>
+      <div class="form__modal modal">
+        <h3>Ваш отзыв отправлен!</h3>
+        <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.
+        </p>
+        <button class="modal__button button" type="button">Закрыть окно</button>
+      </div>
     </form>
   </main>
   <footer class="footer">
@@ -111,24 +121,24 @@
     <ul class="footer__social social">
       <li class="social__item">
         <a class="social__link" title="Наш твитер" href="https://twitter.com/" aria-label="Наш твитер">
-          <img src="img/icon-twitter.svg" alt="">
+          <img src="img/icon-twitter.svg" alt="" width="18" height="14">
         </a>
       </li>
       <li class="social__item">
         <a class="social__link" href="https://www.facebook.com/" aria-label="Наш фейсбук">
-          <img src="img/icon-facebook.svg" alt="">
+          <img src="img/icon-facebook.svg" alt="" width="8" height="18">
         </a>
       </li>
       <li class="social__item">
         <a class="social__link" title="Наш ютуб" href="https://www.youtube.com/" aria-label="Наш ютуб">
-          <img src="img/icon-youtube.svg" alt="">
+          <img src="img/icon-youtube.svg" alt="" width="20" height="14">
         </a>
       </li>
     </ul>
     <div class="footer__copyright copyright">
       <p>Разработано</p>
       <a title="Сайт Html Academy" href="">
-        <img src="../img/logo-htmlacademy.svg" alt="Иконка HTML Academy">
+        <img src="img/logo-htmlacademy.svg" alt="Иконка HTML Academy">
       </a>
     </div>
   </footer>

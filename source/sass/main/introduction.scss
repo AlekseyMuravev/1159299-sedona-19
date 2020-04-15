@@ -1,0 +1,87 @@
+.introduction {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 40px 8px 18px;
+  position: relative;
+  min-width: $mobile;
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+}
+
+.introduction::before {
+  content: "";
+  background-image: url("../img/bg-intro-triangle-mobile.svg");
+  position: absolute;
+  left: -1px;
+  top: -25px;
+  min-width: $mobile;
+  height: 26px;
+}
+
+@media (min-width: $tablet) {
+  .introduction {
+    position: relative;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: $tablet) {
+  .introduction::before {
+    content: "";
+    background-image: url("../img/bg-intro-triangle-tablet.svg");
+    position: absolute;
+    left: 0;
+    top: -56px;
+    width: $tablet;
+    height: 57px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .introduction {
+    position: relative;
+    max-width: $desktop;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop) {
+  .introduction::before {
+    content: "";
+    background-image: url("../img/bg-intro-triangle-desktop.svg");
+    position: absolute;
+    left: 0;
+    top: -56px;
+    width: $desktop;
+    height: 57px;
+  }
+}
+
+.introduction h1 {
+  font-size: $font-size-heading-mobile;
+  max-width: 450px;
+  margin: 0 auto 25px;
+}
+
+@media (min-width: $tablet) {
+  .introduction h1 {
+    font-size: 30px;
+    max-width: 600px;
+  }
+}
+
+.introduction p {
+  font-size: $font-size-paragraph-mobile;
+  line-height: 24px;
+  color: $color-paragraph;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet) {
+  .introduction p {
+    font-size: $font-size-paragraph-mobile;
+    color: $color-paragraph;
+    max-width: 540px;
+    margin: 0 auto 20px;
+  }
+}

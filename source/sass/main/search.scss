@@ -1,51 +1,30 @@
-@media (max-width: 768px) {
-  .search {
-    width: 320px;
-  }
-  .map-tablet {
-    display: none;
-  }
-  .map-desktop {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) {
-  .search {
-    width: 768px;
-  }
-  .map-mobile {
-  display: none;
-  }
-  .map-tablet {
-    display: block;
-  }
-  .map-desktop {
-    display: none;
-  }
-}
-
-@media (min-width: 1200px) {
-  .search {
-    width: 1200px;
-    margin: 0 auto;
-  }
-  .map-mobile {
-    display: none;
-    }
-    .map-tablet {
-      display: none;
-    }
-    .map-desktop {
-      display: block;
-    }
-}
-
 .search {
+  min-width: $mobile;
   padding: 0;
+  background-color: $color-text-on-primary;
 }
-
 
 .search__search-question {
   margin: 0;
+}
+
+.search__button {
+  margin: 0 auto 49px;
+}
+
+.search__map {
+  width: auto;
+  height: 350px;
+}
+
+.search__map img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: $desktop) {
+  .search {
+    max-width: $desktop;
+    margin: 0 auto;
+  }
 }

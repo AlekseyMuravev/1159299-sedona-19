@@ -1,0 +1,89 @@
+.city-filling {
+  display: flex;
+  width: 100%;
+  text-align: start;
+  color: #000000;
+  background-color: #ffffff;
+  padding: 12px 5.6% 12px;
+}
+
+@media (max-width: 767px) {
+  .city-filling:nth-of-type(2) {
+    order: 1;
+  }
+}
+
+@media (min-width: $tablet) {
+  .city-filling {
+    display: block;
+    text-align: center;
+    width: 33.33%;
+    padding: 63px 18px 65px;
+  }
+}
+
+.city-filling__text {
+  width: 240px;
+  margin: 10px 0 0 3.75%;
+}
+
+@media (min-width: $tablet) {
+  .city-filling__text {
+    display: inline;
+    margin: 0 auto;
+  }
+}
+
+.city-filling h3 {
+  font-size: $font-size-heading-mobile;
+  line-height: $line-height-heading;
+  margin: 0 0 13px;
+}
+
+@media (min-width: $tablet) {
+  .city-filling h3 {
+    font-size: $font-size-heading-tablet;
+    margin: 0 auto 20px;
+  }
+}
+
+.city-filling p {
+  font-size: $font-size-paragraph-mobile;
+  line-height: $line-height-paragraph;
+  color: $color-paragraph;
+  margin: 0;
+}
+
+@media (min-width: $tablet) {
+  .city-filling p {
+    font-size: $font-size-paragraph-tablet;
+    line-height: $line-height-paragraph;
+    max-width: 180px;
+    margin: 0 auto 15px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .city-filling p {
+    max-width: 320px;
+  }
+}
+
+.city-filling__image {
+  text-align: center;
+  width: 40px;
+  height: 38px;
+}
+
+@media (min-width: $tablet) {
+  .city-filling__image {
+    width: 77px;
+    height: 75px;
+    margin: 0 auto 25px;
+  }
+}
+
+.city-filling__image img {
+  width: 100%;
+  height: 100%;
+}

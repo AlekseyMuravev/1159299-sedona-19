@@ -3,18 +3,19 @@
   position: absolute;
   top: -2px;
   left: 0;
-  width: 60px;
-  height: 60px;
+  width: 56px;
+  height: 56px;
   background-color: #f2f2f2;
   border: 1px solid #f2f2f2;
   border-radius: 3px;
 }
 
 .checkbox:checked + .checkbox-label::before {
-  width: 60px;
-  height: 60px;
-  background: url("../img/icon-tick.svg") no-repeat,
-              #f2f2f2;
+  width: 56px;
+  height: 56px;
+  background:
+    url("../img/icon-tick.svg") no-repeat,
+    #f2f2f2;
   background-position: center;
   border: 1px solid #f2f2f2;
   border-radius: 3px;

@@ -1,22 +1,21 @@
-@media (max-width: $tablet) {
-  .advantages {
-    width: $mobile;
-  }
+.advantages {
+  min-width: $mobile;
+  padding: 0;
 }
 
-@media (min-width: $tablet) {
-  .advantages {
-    width: $tablet;
+.advantages__list-place {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .advantages:nth-of-type(2n) .list-place__image {
+    order: 1;
   }
 }
 
 @media (min-width: $desktop) {
   .advantages {
-    width: $desktop;
+    max-width: $desktop;
     margin: 0 auto;
   }
-}
-
-.advantages__list-plase {
-  margin: 0;
 }

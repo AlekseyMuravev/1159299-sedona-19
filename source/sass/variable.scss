@@ -1,12 +1,30 @@
 $palette-primary: #81b3d2;
+$palette-primary-hover: #669ec0;
+$palette-primary-active: #5496bd;
+$palette-primary-disabled: #e5e5e5;
 $palette-secondary: #eeeeee;
 
 $color-heading: #000000;
 $color-paragraph: #333333;
 $color-text-on-primary: #ffffff;
+$color-text-hover: #81b3d2;
+$color-text-active: rgba(255, 255, 255, 0.3);
+$color-text-on-primary-active: #e5e5e5;
 
-$font-size-heading: 18px;
-$font-size-paragraph: 14px;
+$color-link-tablet-hover: #81b3d2;
+$color-link-tablet-down: rgba(0, 0, 0, 0.3);
+$color-link-tablet-active: #766357;
+$color-link-tablet-active-hover: #604e43;
+$color-link-tablet-active-down: rgba(118, 99, 87, 0.3);
+
+$font-size-heading-mobile: 18px;
+$font-size-paragraph-mobile: 14px;
+
+$font-size-heading-tablet: 21px;
+$font-size-paragraph-tablet: 14px;
+
+$line-height-heading: 26px;
+$line-height-paragraph: 21px;
 
 $mobile: 320px;
 $tablet: 768px;

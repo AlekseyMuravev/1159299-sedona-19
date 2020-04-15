@@ -1,0 +1,43 @@
+.question {
+  min-width: auto;
+  text-align: center;
+  padding: 25px 15px 25px;
+}
+
+@media (min-width: $tablet) {
+  .question {
+    padding: 45px 15px 25px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .question {
+    max-width: $desktop;
+  }
+}
+
+.question h2 {
+  font-size: $font-size-heading-tablet;
+  margin: 0 auto 25px;
+  max-width: 434px;
+}
+
+@media (min-width: $tablet) {
+  .question h2 {
+    font-size: 30px;
+  }
+}
+
+.question p {
+  font-size: $font-size-paragraph-mobile;
+  line-height: 24px;
+  color: $color-paragraph;
+  max-width: 400px;
+  margin: 0 auto 15px;
+}
+
+@media (min-width: $tablet) {
+  .question p {
+    max-width: 490px;
+  }
+}

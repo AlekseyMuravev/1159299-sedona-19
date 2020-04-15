@@ -1,0 +1,22 @@
+.photo-list {
+  list-style: none;
+  min-width: auto;
+  padding: 0;
+}
+
+@media (min-width: $tablet) {
+  .photo-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.photo-list__item {
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet) {
+  .photo-list__item {
+    margin: 0;
+  }
+}

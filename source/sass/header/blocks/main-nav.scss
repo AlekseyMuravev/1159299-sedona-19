@@ -1,0 +1,119 @@
+.main-nav {
+  width: auto;
+  margin: 0;
+}
+
+.main-nav__list {
+  list-style: none;
+  width: auto;
+  margin: 0;
+}
+
+@media (min-width: $tablet) {
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.site-list {
+  padding: 0;
+}
+
+.site-list__item {
+  width: auto;
+  text-align: center;
+  background-color: $palette-primary;
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 767px) {
+  .site-list__item:hover {
+    background-color: $palette-primary-hover;
+  }
+}
+
+@media (max-width: 767px) {
+  .site-list__item:active {
+    background-color: $palette-primary-active;
+  }
+}
+
+@media (max-width: 767px) {
+  .site-list__item:disabled {
+    background-color: $palette-primary-disabled;
+  }
+}
+
+@media (min-width: $tablet) {
+  .site-list__item {
+    width: 19.9%;
+    background-color: $color-text-on-primary;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: $tablet) {
+  .site-list__item:nth-child(2) {
+    margin-right: 10.15%;
+  }
+}
+
+@media (min-width: $tablet) {
+  .site-list__item:nth-child(3) {
+    margin-left: 10.15%;
+  }
+}
+
+@media (min-width: $desktop) {
+  .site-list__item {
+    width: 239px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .site-list__item:nth-child(2) {
+    margin-right: 122px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .site-list__item:nth-child(3) {
+    margin-left: 122px;
+  }
+}
+
+.site-list__item a {
+  display: block;
+  font-size: $font-size-heading-mobile;
+  font-weight: bold;
+  line-height: 40px;
+  color: $color-text-on-primary;
+  padding: 8px 0 7px;
+}
+
+@media (max-width: 767px) {
+  .site-list__item a:active {
+    color: $color-text-active;
+  }
+}
+
+@media (min-width: $tablet) {
+  .site-list__item a {
+    font-size: $font-size-paragraph-mobile;
+    line-height: 26px;
+    color: $color-heading;
+  }
+}
+
+@media (min-width: $tablet) {
+  .site-list__item a:hover {
+    color: $color-link-tablet-hover;
+  }
+}
+
+@media (min-width: $tablet) {
+  .site-list__item a:active {
+    color: $color-link-tablet-down;
+  }
+}

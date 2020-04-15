@@ -1,26 +1,22 @@
-@media (max-width: $tablet) {
-  .promo {
-    width: $mobile;
-    height: 158px;
-    background-image: url("../img/bg-back-mobile@1x.jpg");
-    background-position: -50% -230px;
-    background-color: $palette-primary;
-  }
+.promo {
+  min-width: $mobile;
+  height: 156px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: -50% -231px;
+  background-color: $palette-primary;
 }
 
 @media (min-width: $tablet) {
   .promo {
-    width: $tablet;
     height: 520px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: 0 0;
-    background-color: $palette-primary;
   }
 }
 
 @media (min-width: $desktop) {
   .promo {
-    width: $desktop;
+    max-width: $desktop;
     height: 520px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
     margin: 0 auto;

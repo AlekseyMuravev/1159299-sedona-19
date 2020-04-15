@@ -1,0 +1,16 @@
+.copyright {
+  display: flex;
+  justify-content: space-around;
+  width: 140px;
+}
+
+@media (min-width: $tablet) {
+  .copyright {
+    margin: 0;
+  }
+}
+
+.copyright p {
+  font-size: $font-size-paragraph-mobile;
+  margin-top: 0;
+}
