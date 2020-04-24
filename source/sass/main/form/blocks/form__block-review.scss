@@ -1,0 +1,49 @@
+.form__block-review {
+  position: relative;
+  width: 100%;
+  padding: 24px 6% 51px;
+
+  @media (min-width: $tablet) {
+    border-top: 1px solid rgba(1, 1, 1, 0.2);
+    padding: 61px 0 51px;
+  }
+}
+
+.form__block-review h2 {
+  font: inherit;
+  font-size: $font-size-heading-mobile;
+  font-weight: bold;
+  line-height: $line-height-heading;
+  text-align: center;
+  color: $color-heading;
+  width: 250px;
+  margin: 0 auto 32px;
+
+  @media (min-width: $tablet) {
+    font-size: $font-size-heading-tablet;
+    width: 440px;
+    padding: 0 70px;
+    background-color: $color-text-on-primary;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.form__block-review textarea {
+  font: inherit;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  width: 100%;
+  min-height: 160px;
+  border: none;
+  background-color: #f2f2f2;
+  padding: 16px 10px 12px;
+  resize: none;
+
+  @media (min-width: $desktop) {
+    width: 960px;
+  }
+}

@@ -2,10 +2,8 @@
   list-style: none;
   min-width: auto;
   padding: 0;
-}
 
-@media (min-width: $tablet) {
-  .photo-list {
+  @media (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
   }
@@ -13,10 +11,8 @@
 
 .photo-list__item {
   margin: 0 auto;
-}
 
-@media (min-width: $tablet) {
-  .photo-list__item {
+  @media (min-width: $tablet) {
     margin: 0;
   }
 }

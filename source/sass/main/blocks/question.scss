@@ -2,42 +2,34 @@
   min-width: auto;
   text-align: center;
   padding: 25px 15px 25px;
-}
 
-@media (min-width: $tablet) {
-  .question {
+  @media (min-width: $tablet) {
     padding: 45px 15px 25px;
   }
-}
 
-@media (min-width: $desktop) {
-  .question {
+  @media (min-width: $desktop) {
     max-width: $desktop;
   }
 }
 
 .question h2 {
   font-size: $font-size-heading-tablet;
-  margin: 0 auto 25px;
   max-width: 434px;
-}
+  margin: 0 auto 25px;
 
-@media (min-width: $tablet) {
-  .question h2 {
+  @media (min-width: $tablet) {
     font-size: 30px;
   }
 }
 
 .question p {
-  font-size: $font-size-paragraph-mobile;
+  font-size: $font-size-paragraph;
   line-height: 24px;
   color: $color-paragraph;
   max-width: 400px;
   margin: 0 auto 15px;
-}
 
-@media (min-width: $tablet) {
-  .question p {
+  @media (min-width: $tablet) {
     max-width: 490px;
   }
 }

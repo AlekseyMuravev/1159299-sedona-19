@@ -1,34 +1,27 @@
 .header {
   position: relative;
   min-width: $mobile;
-}
+  background-color: #fefefe;
 
-@media (min-width: $tablet) {
-  .header {
+  @media (min-width: $tablet) {
     background-color: $color-text-on-primary;
   }
-}
 
-@media (min-width: $desktop) {
-  .header {
+  @media (min-width: $desktop) {
     max-width: $desktop;
     margin: 0 auto;
   }
 }
 
 .header__nav {
-  width: auto;
-  padding: 0;
   margin: 0;
 }
 
 .header__menu-toggle {
   min-width: $mobile;
   min-height: 56px;
-}
 
-@media (min-width: $tablet) {
-  .header__menu-toggle {
+  @media (min-width: $tablet) {
     display: none;
   }
 }
@@ -37,10 +30,9 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-}
+  z-index: 1;
 
-@media (min-width: $tablet) {
-  .header__logo {
+  @media (min-width: $tablet) {
     top: 0;
   }
 }

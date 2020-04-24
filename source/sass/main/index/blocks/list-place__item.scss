@@ -5,18 +5,20 @@
   color: $color-text-on-primary;
   background-color: $palette-primary;
   padding: 57px 12px 25px;
-}
 
-@media (min-width: $tablet) {
-  .list-place__item {
+  @media (min-width: $tablet) {
     width: 33.33%;
     padding: 46px 30px 20px;
   }
-}
 
-@media (min-width: $desktop) {
-  .list-place__item {
+  @media (min-width: $desktop) {
     width: 400px;
+  }
+
+  &--grey {
+    position: relative;
+    color: $color-heading;
+    background-color: #eeeeee;
   }
 }
 
@@ -24,35 +26,47 @@
   font-size: $font-size-heading-mobile;
   max-width: 256px;
   margin: 0 auto 8px;
-}
 
-@media (min-width: $tablet) {
-  .list-place__item h3 {
+  @media (min-width: $tablet) {
     font-size: $font-size-heading-tablet;
     max-width: 182px;
   }
 }
 
 .list-place__item p {
-  font-size: $font-size-paragraph-mobile;
+  font-size: $font-size-paragraph;
   line-height: $line-height-paragraph;
   max-width: 300px;
   margin: 0 auto 16px;
-}
 
-@media (min-width: $tablet) {
-  .list-place__item p {
-    font-size: $font-size-paragraph-tablet;
+  @media (min-width: $tablet) {
+    font-size: $font-size-paragraph;
     line-height: $line-height-paragraph;
     max-width: 182px;
   }
-}
 
-@media (min-width: $desktop) {
-  .list-place__item p {
-    font-size: $font-size-paragraph-tablet;
+  @media (min-width: $desktop) {
+    font-size: $font-size-paragraph;
     line-height: $line-height-paragraph;
     max-width: 280px;
     margin-bottom: 25px;
+  }
+
+  &--grey p {
+    color: $color-paragraph;
+  }
+}
+
+.list-place__item-border {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 1px;
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+
+  @media (min-width: $tablet) {
+    display: none;
   }
 }

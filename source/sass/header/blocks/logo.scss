@@ -2,10 +2,8 @@
   width: 102px;
   height: 83px;
   text-align: center;
-}
 
-@media (min-width: $desktop) {
-  .logo {
+  @media (min-width: $desktop) {
     width: 187px;
     height: 97px;
   }

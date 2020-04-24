@@ -1,12 +1,82 @@
-@media (max-width: $tablet) {
-  .toggle {
+.toggle {
+  @media (max-width: $tablet) {
+    width: 23px;
+    height: 21px;
     border: none;
     background-color: transparent;
+    padding: 0;
   }
-}
 
-@media (min-width: $tablet) {
-  .toggle {
+  @media (min-width: $tablet) {
     display: none;
   }
 }
+
+.toggle__line {
+  border: 2px solid $color-text-on-primary;
+  width: 23px;
+  background-color: $color-text-on-primary;
+  animation-name: toggle-x-center;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+
+  &::before {
+    content: "";
+    border: 2px solid $color-text-on-primary;
+    width: 23px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: $color-text-on-primary;
+    animation-name: toggle-x-left;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+
+  &::after {
+    content: "";
+    border: 2px solid $color-text-on-primary;
+    width: 23px;
+    position: absolute;
+    top: 16px;
+    right: 0;
+    background-color: $color-text-on-primary;
+    animation-name: toggle-x-right;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+}
+
+// @keyframes toggle-x-center {
+//   from {
+//     display: block;
+//   }
+//   to {
+//     border: none;
+//     background-color: transparent;
+//   }
+// }
+
+// @keyframes toggle-x-left {
+//   from {
+//     transform: rotate(0);
+//   }
+//   10% {
+//     transform: translateY(10px);
+//   }
+//   to {
+//     transform: translateY(10px) rotate(45deg);
+//   }
+// }
+
+// @keyframes toggle-x-right {
+//   from {
+//     transform: rotate(0);
+//   }
+//   10% {
+//     transform: translateY(-6px);
+//   }
+//   to {
+//     transform: translateY(-6px) rotate(-45deg);
+//   }
+// }

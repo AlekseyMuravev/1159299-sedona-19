@@ -2,14 +2,21 @@
   min-width: $mobile;
   padding: 0;
   background-color: $color-text-on-primary;
+
+  @media (min-width: $desktop) {
+    max-width: $desktop;
+    margin: 0 auto;
+  }
 }
 
 .search__search-question {
   margin: 0;
 }
 
-.search__button {
+.search__button a {
   margin: 0 auto 49px;
+
+  @include button;
 }
 
 .search__map {
@@ -20,11 +27,4 @@
 .search__map img {
   width: 100%;
   height: 100%;
-}
-
-@media (min-width: $desktop) {
-  .search {
-    max-width: $desktop;
-    margin: 0 auto;
-  }
 }

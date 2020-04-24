@@ -1,0 +1,164 @@
+.form__block {
+  position: relative;
+  width: 100%;
+  padding: 24px 6% 6px;
+  border: none;
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+
+  @media (min-width: $tablet) {
+    border: none;
+    padding: 0;
+    margin-bottom: 82px;
+  }
+
+  &--name {
+    @media (max-width: 767px) {
+      order: -2;
+    }
+
+    @media (min-width: $tablet) {
+      width: 50%;
+      padding-left: 58px;
+    }
+  }
+
+  &--contact {
+    @media (max-width: 767px) {
+      order: -1;
+    }
+
+    @media (min-width: $tablet) {
+      width: 100%;
+      padding: 42px 0 47px;
+      margin: 60px auto 0;
+      border-top: 1px solid rgba(1, 1, 1, 0.2);
+    }
+
+    @media (min-width: $desktop) {
+      display: flex;
+      justify-content: space-between;
+      margin: 60px auto 0;
+    }
+  }
+}
+
+.form__block h2 {
+  font: inherit;
+  font-size: $font-size-heading-mobile;
+  font-weight: bold;
+  line-height: $line-height-heading;
+  text-align: center;
+  color: $color-heading;
+  width: 270px;
+  margin: 0 auto 25px;
+
+  @media (min-width: $tablet) {
+    font-size: $font-size-heading-tablet;
+    text-align: left;
+    width: 290px;
+    margin: 0 0 45px;
+  }
+}
+
+.form__block--contact h2 {
+  @media (min-width: $tablet) {
+    text-align: center;
+    margin: 0 0 42px;
+    width: 440px;
+    padding: 0 60px;
+    background-color: $color-text-on-primary;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.form__block-wraper {
+  margin: 0 0 20px;
+
+  &--phone {
+    @media (min-width: $desktop) {
+      display: flex;
+      align-items: baseline;
+      width: 401px;
+    }
+  }
+
+  &--mail {
+    @media (min-width: $desktop) {
+      display: flex;
+      align-items: baseline;
+      width: 480px;
+    }
+  }
+}
+
+.form__block--name .form__block-wraper {
+  display: flex;
+  align-items: baseline;
+}
+
+.form__block--name .form__block-wraper:last-of-type {
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+  }
+}
+
+.form__block label {
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333;
+  margin: 0 auto 14px;
+
+  @media (min-width: $tablet) {
+    text-align: start;
+    margin: 22px 0 0;
+  }
+}
+
+.form__block--contact label {
+  margin: 0 0 0 22px;
+
+  @media (min-width: $desktop) {
+    margin: 0;
+  }
+}
+
+.form__block input {
+  position: relative;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  color: #000000;
+  background-color: #f2f2f2;
+  border: none;
+  padding: 18px 0 14px 20px;
+  margin: 14px 0 0;
+  width: 100%;
+}
+
+.form__block--contact > .form__block-wraper {
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.form__block--name input {
+  margin: 0 0 0 3.5%;
+}
+
+.form__block--contact input {
+  width: 100%;
+
+  @media (min-width: $desktop) {
+    width: 300px;
+  }
+}
+
+.desktop-none {
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}

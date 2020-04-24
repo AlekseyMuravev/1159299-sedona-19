@@ -1,24 +1,78 @@
 .promo {
+  position: relative;
   min-width: $mobile;
   height: 156px;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: -50% -231px;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  background-position: 50% -231px;
   background-color: $palette-primary;
-}
 
-@media (min-width: $tablet) {
-  .promo {
+  &::before {
+    content: "";
+    background: url("../img/bg-intro-triangle-mobile.svg") no-repeat;
+    position: absolute;
+    background-size: 100% auto;
+    left: -1px;
+    bottom: 0;
+    width: 100%;
+    min-height: 26px;
+  }
+
+  @media (min-width: $tablet) {
     height: 520px;
-    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat;
     background-position: 0 0;
+
+    &::before {
+      content: "";
+      background-image: url("../img/bg-intro-triangle-tablet.svg");
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: $tablet;
+      height: 57px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    &::before {
+      content: "";
+      background-image: url("../img/bg-intro-triangle-desktop.svg");
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: $desktop;
+    }
+  }
+
+
+  &--big {
+    position: relative;
+    height: 388px;
+    background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+    background-position: 50% -1px;
+    background-color: $palette-primary;
+
+    @media (min-width: $tablet) {
+      height: 520px;
+      background: url("../img/bg-back-desktop@1x.jpg") no-repeat;
+      background-position: 0 0;
+      background-color: $palette-primary;
+    }
   }
 }
 
-@media (min-width: $desktop) {
-  .promo {
-    max-width: $desktop;
-    height: 520px;
-    background-image: url("../img/bg-back-desktop@1x.jpg");
-    margin: 0 auto;
+.promo img {
+  position: absolute;
+  width: 281px;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet) {
+    width: 460px;
   }
 }

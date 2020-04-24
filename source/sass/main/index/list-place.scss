@@ -4,18 +4,12 @@
   min-width: 100%;
   padding: 0;
   list-style: none;
-}
 
-@media (min-width: $tablet) {
-  .list-place {
+  @media (min-width: $tablet) {
     display: flex;
-    padding: 0;
-    margin: 0;
   }
-}
 
-@media (min-width: $desktop) {
-  .list-place {
+  @media (min-width: $desktop) {
     max-width: $desktop;
   }
 }
@@ -27,19 +21,15 @@
 .list-place__image {
   width: 100%;
   height: 260px;
-}
 
-@media (min-width: $tablet) {
-  .list-place__image {
+  @media (min-width: $tablet) {
     line-height: 0;
     width: 66.67%;
     height: 256px;
     background-color: $palette-secondary;
   }
-}
 
-@media (min-width: $desktop) {
-  .list-place__image {
+  @media (min-width: $desktop) {
     line-height: 0;
     width: 800px;
     height: 256px;

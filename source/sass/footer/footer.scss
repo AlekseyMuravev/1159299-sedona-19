@@ -3,19 +3,15 @@
   text-align: center;
   padding: 31px 80px;
   background-color: $color-text-on-primary;
-}
 
-@media (min-width: $tablet) {
-  .footer {
+  @media (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     padding: 36px 60px;
   }
-}
 
-@media (min-width: $desktop) {
-  .footer {
+  @media (min-width: $desktop) {
     max-width: $desktop;
     padding: 26px 120px;
     margin: 0 auto;
@@ -28,10 +24,8 @@
   font-weight: bold;
   color: #000000;
   margin: 0 auto 35px;
-}
 
-@media (min-width: $tablet) {
-  .footer__hashtag {
+  @media (min-width: $tablet) {
     margin: 15px 0 0;
   }
 }
