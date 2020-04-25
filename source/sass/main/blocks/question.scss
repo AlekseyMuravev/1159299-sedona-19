@@ -1,7 +1,7 @@
 .question {
   min-width: auto;
   text-align: center;
-  padding: 25px 15px 25px;
+  padding: 33px 15px 25px;
 
   @media (min-width: $tablet) {
     padding: 45px 15px 25px;
@@ -10,10 +10,16 @@
   @media (min-width: $desktop) {
     max-width: $desktop;
   }
+
+  &.question--index {
+    padding: 26px 15px 25px;
+  }
 }
 
 .question h2 {
-  font-size: $font-size-heading-tablet;
+  font-size: $font-size-heading-mobile;
+  line-height: $line-height-heading;
+  font-weight: bold;
   max-width: 434px;
   margin: 0 auto 25px;
 
@@ -22,12 +28,17 @@
   }
 }
 
+.question--index h2 {
+  font-size: $font-size-heading-tablet;
+  margin: 0 auto 15px;
+}
+
 .question p {
   font-size: $font-size-paragraph;
   line-height: 24px;
   color: $color-paragraph;
   max-width: 400px;
-  margin: 0 auto 15px;
+  margin: 0 auto 10px;
 
   @media (min-width: $tablet) {
     max-width: 490px;

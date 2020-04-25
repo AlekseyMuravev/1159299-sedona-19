@@ -1,7 +1,7 @@
 .introduction {
   text-align: center;
   background-color: #ffffff;
-  padding: 40px 8px 18px;
+  padding: 39px 8px 27px;
   position: relative;
   min-width: $mobile;
   border-bottom: 1px solid rgba(1, 1, 1, 0.2);
@@ -18,21 +18,8 @@
   }
 
   &--index {
-    padding: 40px 8px 24px;
-
-    @media (max-width: 767px) {
-      position: relative;
-
-      &::after {
-        content: "";
-        background-image: url("../img/bg-triangle.svg");
-        position: absolute;
-        left: 0;
-        bottom: -18px;
-        width: 320px;
-        min-height: 37px;
-      }
-    }
+    padding: 41px 8px 24px;
+    border-bottom: none;
   }
 }
 
@@ -51,6 +38,8 @@
 }
 
 .introduction--index h1 {
+  margin: 0 auto 27px;
+
   @media (min-width: $tablet) {
     font-size: $font-size-heading-tablet;
   }
@@ -73,8 +62,18 @@
 
 .introduction--index p {
   line-height: $line-height-heading;
+  margin: 0 auto 1px;
 
   @media (min-width: $tablet) {
     max-width: 550px;
+  }
+}
+
+.introduction img {
+  @media (max-width: 767px) {
+    position: absolute;
+    left: 0;
+    bottom: -17px;
+    width: 100%;
   }
 }

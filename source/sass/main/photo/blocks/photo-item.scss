@@ -1,7 +1,7 @@
 .photo-item {
   position: relative;
   min-width: auto;
-  padding: 22px 20px 0;
+  padding: 22px 20px 6px;
   border-bottom: 1px solid rgba(1, 1, 1, 0.2);
 
   @media (min-width: $tablet) {
@@ -54,7 +54,7 @@
 .photo-item__image {
   max-width: 100%;
   line-height: 0;
-  margin-bottom: 22px;
+  margin-bottom: 15px;
 
   @media (min-width: $tablet) {
     margin: 0;
@@ -70,7 +70,7 @@
   font-size: $font-size-paragraph;
   font-weight: bold;
   line-height: 24px;
-  margin: 0 0 5px;
+  margin: 0;
 }
 
 .photo-item p {

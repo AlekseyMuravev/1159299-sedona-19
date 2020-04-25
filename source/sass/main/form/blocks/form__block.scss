@@ -145,6 +145,38 @@
   }
 }
 
+.form__block-wraper--mail {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 56px;
+    height: 57px;
+    background: url("../img/icon-mail.svg") no-repeat;
+    background-color: #e6e6e6;
+    background-position: center;
+  }
+}
+
+.form__block-wraper--phone {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 56px;
+    height: 57px;
+    background: url("../img/icon-phone.svg") no-repeat;
+    background-color: #e6e6e6;
+    background-position: center;
+  }
+}
+
 .form__block--name input {
   margin: 0 0 0 3.5%;
 }

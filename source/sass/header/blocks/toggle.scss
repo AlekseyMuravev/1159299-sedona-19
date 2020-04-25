@@ -13,6 +13,7 @@
 }
 
 .toggle__line {
+  display: block;
   border: 2px solid $color-text-on-primary;
   width: 23px;
   background-color: $color-text-on-primary;

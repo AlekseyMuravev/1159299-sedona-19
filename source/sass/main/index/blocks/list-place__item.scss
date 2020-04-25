@@ -4,7 +4,7 @@
   justify-content: center;
   color: $color-text-on-primary;
   background-color: $palette-primary;
-  padding: 57px 12px 25px;
+  padding: 37px 12px 25px;
 
   @media (min-width: $tablet) {
     width: 33.33%;
@@ -15,10 +15,24 @@
     width: 400px;
   }
 
+  &--first {
+    @media (max-width: 767px) {
+      padding: 17.14% 12px 25px;
+
+      @media (max-width: 768px) {
+        background: url("../img/bg-triangle.svg") no-repeat;
+        background-color: $palette-primary;
+        background-position: 0 -11.47%;
+        background-size: 100% auto;
+      }
+    }
+  }
+
   &--grey {
     position: relative;
     color: $color-heading;
     background-color: #eeeeee;
+    padding: 27px 12px 13px;
   }
 }
 
@@ -51,10 +65,10 @@
     max-width: 280px;
     margin-bottom: 25px;
   }
+}
 
-  &--grey p {
-    color: $color-paragraph;
-  }
+.list-place__item--grey p {
+  color: $color-paragraph;
 }
 
 .list-place__item-border {

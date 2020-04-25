@@ -8,3 +8,10 @@
     height: 97px;
   }
 }
+
+.logo img {
+  @media (min-width: $desktop) {
+    width: 187px;
+    height: 97px;
+  }
+}
