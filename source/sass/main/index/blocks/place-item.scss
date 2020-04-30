@@ -1,4 +1,4 @@
-.list-place__item {
+.place-item {
   width: 100%;
   text-align: center;
   justify-content: center;
@@ -36,7 +36,7 @@
   }
 }
 
-.list-place__item h3 {
+.place-item h3 {
   font-size: $font-size-heading-mobile;
   max-width: 256px;
   margin: 0 auto 8px;
@@ -47,7 +47,7 @@
   }
 }
 
-.list-place__item p {
+.place-item p {
   font-size: $font-size-paragraph;
   line-height: $line-height-paragraph;
   max-width: 300px;
@@ -67,11 +67,11 @@
   }
 }
 
-.list-place__item--grey p {
+.place-item--grey p {
   color: $color-paragraph;
 }
 
-.list-place__item-border {
+.place-item__border {
   position: absolute;
   bottom: 0;
   left: 50%;

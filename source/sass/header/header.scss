@@ -2,9 +2,11 @@
   position: relative;
   min-width: $mobile;
   background-color: #fefefe;
+  padding-bottom: 56px;
 
   @media (min-width: $tablet) {
     background-color: $color-text-on-primary;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop) {
@@ -15,15 +17,6 @@
 
 .header__nav {
   margin: 0;
-}
-
-.header__menu-toggle {
-  min-width: $mobile;
-  min-height: 56px;
-
-  @media (min-width: $tablet) {
-    display: none;
-  }
 }
 
 .header__logo {

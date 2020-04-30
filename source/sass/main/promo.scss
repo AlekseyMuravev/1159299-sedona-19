@@ -21,8 +21,9 @@
     background-position:
       0 101%,
       50% 100%;
-    background-size: 100% auto,
-    auto;
+    background-size:
+      100% auto,
+      auto;
   }
 
   @media (min-width: $desktop) {
@@ -31,12 +32,11 @@
     margin: 0 auto;
   }
 
-
   &--big {
     position: relative;
     height: 388px;
     background:
-    url("../img/bg-intro-triangle-mobile.svg") no-repeat,
+      url("../img/bg-intro-triangle-mobile.svg") no-repeat,
       url("../img/bg-back-mobile@1x.jpg") no-repeat;
     background-position:
       0 100%,
@@ -54,7 +54,6 @@
       background-position:
         0 100.5%,
         0 0;
-      background-size: 100% 520px;
       background-color: $palette-primary;
       background-size:
         100% auto,

@@ -78,6 +78,20 @@
   margin: 0 0 20px;
 
   &--phone {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 56px;
+      height: 57px;
+      background: url("../img/icon-phone.svg") no-repeat;
+      background-color: #e6e6e6;
+      background-position: center;
+    }
+
     @media (min-width: $desktop) {
       display: flex;
       align-items: baseline;
@@ -86,6 +100,20 @@
   }
 
   &--mail {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 56px;
+      height: 57px;
+      background: url("../img/icon-mail.svg") no-repeat;
+      background-color: #e6e6e6;
+      background-position: center;
+    }
+
     @media (min-width: $desktop) {
       display: flex;
       align-items: baseline;
@@ -142,38 +170,6 @@
   @media (min-width: $desktop) {
     display: flex;
     justify-content: space-between;
-  }
-}
-
-.form__block-wraper--mail {
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 56px;
-    height: 57px;
-    background: url("../img/icon-mail.svg") no-repeat;
-    background-color: #e6e6e6;
-    background-position: center;
-  }
-}
-
-.form__block-wraper--phone {
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 56px;
-    height: 57px;
-    background: url("../img/icon-phone.svg") no-repeat;
-    background-color: #e6e6e6;
-    background-position: center;
   }
 }
 
