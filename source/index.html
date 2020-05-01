@@ -35,7 +35,6 @@
         </picture>
       </a>
     </div>
-    <div class="header__menu-toggle"></div>
     <button class="header__toggle toggle" type="button">
       <span class="toggle__line"></span>
     </button>
@@ -79,7 +78,7 @@
           </div>
           <div class="city-filling__text">
             <h3>Еда</h3>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            <p>Всегда заказывайте фирменный бургер, вы&nbsp;не разочаруетесь!</p>
           </div>
         </li>
         <li class="list-place__item place-item city-filling">
@@ -137,13 +136,16 @@
       <div class="search__button">
         <a href="#">Найти гостиницу</a>
       </div>
-      <div class="search__map">
+      <div class="search__map map">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
           <source media="(min-width: 600px)" srcset="img/bg-map-tablet@1x.jpg">
-          <img class="map-mobile" src="img/bg-map-mobile@1x.jpg" alt="США, штат Аризона, город Седона" width="320"
+          <img class="map__image" src="img/bg-map-mobile@1x.jpg" alt="США, штат Аризона, город Седона" width="320"
             height="350">
         </picture>
+        <div class="map__marker">
+          <img src="img/icon-map-marker.svg"></img>
+        </div>
       </div>
     </section>
   </main>

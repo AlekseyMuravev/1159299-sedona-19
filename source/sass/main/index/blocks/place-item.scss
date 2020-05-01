@@ -13,11 +13,12 @@
 
   @media (min-width: $desktop) {
     width: 400px;
+    padding: 52px 30px 20px;
   }
 
   &--first {
     @media (max-width: 767px) {
-      padding: 17.14% 12px 25px;
+      padding: 18.15% 12px 25px;
 
       @media (max-width: 768px) {
         background: url("../img/bg-triangle.svg") no-repeat;
@@ -33,6 +34,14 @@
     color: $color-heading;
     background-color: #eeeeee;
     padding: 27px 12px 13px;
+
+    @media (min-width: $tablet) {
+      padding: 45px 12px 22px;
+    }
+
+    @media (min-width: $desktop) {
+      padding-bottom: 44px;
+    }
   }
 }
 
@@ -44,6 +53,10 @@
   @media (min-width: $tablet) {
     font-size: $font-size-heading-tablet;
     max-width: 182px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 auto 10px;
   }
 }
 
@@ -57,18 +70,23 @@
     font-size: $font-size-paragraph;
     line-height: $line-height-paragraph;
     max-width: 182px;
+    margin: 0 auto 23px;
   }
 
   @media (min-width: $desktop) {
     font-size: $font-size-paragraph;
     line-height: $line-height-paragraph;
-    max-width: 280px;
-    margin-bottom: 25px;
+    max-width: 285px;
+    margin-bottom: 22px;
   }
 }
 
 .place-item--grey p {
   color: $color-paragraph;
+
+  @media (min-width: $tablet) {
+    width: 170px;
+  }
 }
 
 .place-item__border {

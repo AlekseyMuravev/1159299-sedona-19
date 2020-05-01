@@ -1,0 +1,113 @@
+.text-input {
+  &--phone {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 56px;
+      height: 57px;
+      background: url("../img/icon-phone.svg") no-repeat;
+      background-color: #e6e6e6;
+      background-position: center;
+    }
+
+    @media (min-width: $desktop) {
+      display: flex;
+      align-items: baseline;
+      width: 401px;
+    }
+  }
+
+  &--mail {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 56px;
+      height: 57px;
+      background: url("../img/icon-mail.svg") no-repeat;
+      background-color: #e6e6e6;
+      background-position: center;
+    }
+
+    @media (min-width: $desktop) {
+      display: flex;
+      align-items: baseline;
+      width: 480px;
+    }
+  }
+}
+
+.form-block--name .text-input {
+  display: flex;
+  align-items: baseline;
+}
+
+.form-block--name .text-input:last-of-type {
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+  }
+}
+
+.text-input__label {
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333;
+  margin: 0 auto 14px;
+
+  @media (min-width: $tablet) {
+    text-align: start;
+    margin: 22px 0 0;
+  }
+}
+
+
+.form-block--contact .text-input__label {
+  margin: 0 0 0 22px;
+
+  @media (min-width: $desktop) {
+    margin: 0;
+  }
+}
+
+.text-input__input {
+  position: relative;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  color: #000000;
+  background-color: #f2f2f2;
+  border: none;
+  padding: 18px 0 14px 20px;
+  margin: 8px 0 0;
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    margin: 6px 0 0;
+  }
+}
+
+.form-block--contact > .text-input {
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.form-block--name .text-input__input {
+  margin: 0 0 0 3.5%;
+}
+
+.form-block--contact .text-input__input {
+  width: 100%;
+
+  @media (min-width: $desktop) {
+    width: 310px;
+  }
+}

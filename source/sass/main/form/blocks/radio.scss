@@ -1,0 +1,47 @@
+.radio {
+  text-align: left;
+
+  @media (min-width: $tablet) {
+    text-align: left;
+  }
+}
+
+.radio__input {
+  @include input-none;
+}
+
+.radio__label {
+  @include radio-checkbox-label;
+
+  @media (min-width: $tablet) {
+    padding: 14px 0 0 76px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 14px 0 0 84px;
+  }
+}
+
+.radio__label::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 56px;
+  height: 56px;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 50%;
+}
+
+.radio__input:checked + .radio__label::before {
+  width: 56px;
+  height: 56px;
+  background:
+    url("../img/icon-radio.svg") no-repeat,
+    #f2f2f2;
+  background-size: 33px 33px;
+  background-position: center;
+  border: 1px solid #f2f2f2;
+  border-radius: 50%;
+}

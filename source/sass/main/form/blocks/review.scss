@@ -1,15 +1,15 @@
-.form__block-review {
+.review {
   position: relative;
   width: 100%;
-  padding: 24px 6% 51px;
+  padding: 20px 6% 44px;
 
   @media (min-width: $tablet) {
     border-top: 1px solid rgba(1, 1, 1, 0.2);
-    padding: 61px 0 51px;
+    padding: 70px 0 51px;
   }
 }
 
-.form__block-review h2 {
+.review h2 {
   font: inherit;
   font-size: $font-size-heading-mobile;
   font-weight: bold;
@@ -17,12 +17,12 @@
   text-align: center;
   color: $color-heading;
   width: 250px;
-  margin: 0 auto 32px;
+  margin: 0 auto 16px;
 
   @media (min-width: $tablet) {
     font-size: $font-size-heading-tablet;
-    width: 440px;
-    padding: 0 70px;
+    width: 400px;
+    padding: 0 50px;
     background-color: $color-text-on-primary;
     position: absolute;
     top: 0;
@@ -31,7 +31,7 @@
   }
 }
 
-.form__block-review textarea {
+.review__textarea {
   font: inherit;
   font-size: 18px;
   font-weight: bold;
@@ -40,7 +40,7 @@
   min-height: 160px;
   border: none;
   background-color: #f2f2f2;
-  padding: 16px 10px 12px;
+  padding: 18px 19px 12px;
   resize: none;
 
   @media (min-width: $desktop) {

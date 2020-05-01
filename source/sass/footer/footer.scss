@@ -8,13 +8,25 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding: 36px 60px;
+    padding: 32px 60px;
   }
 
   @media (min-width: $desktop) {
     max-width: $desktop;
-    padding: 26px 120px;
+    padding: 32px 120px 20px;
     margin: 0 auto;
+  }
+
+  &--form {
+    padding: 30px 60px;
+
+    @media (min-width: $tablet) {
+      padding: 50px 60px;
+    }
+
+    @media (min-width: $desktop) {
+      padding: 55px 120px;
+    }
   }
 }
 
@@ -32,8 +44,16 @@
 
 .footer__social {
   margin: 0 auto 35px;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
 }
 
 .footer__copyright {
   margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
 }

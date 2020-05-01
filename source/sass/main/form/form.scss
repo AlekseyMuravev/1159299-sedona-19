@@ -19,7 +19,7 @@
   }
 }
 
-.mobile-none {
+.form__mobile-none {
   display: none;
   font: inherit;
   font-size: $font-size-paragraph;
@@ -28,11 +28,26 @@
 
   @media (min-width: $tablet) {
     display: inline;
+    margin-top: 18px;
+  }
+}
+
+.form__desktop-none {
+  @media (min-width: $desktop) {
+    display: none;
   }
 }
 
 .form__block {
   margin: 0;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 22px;
+  }
 }
 
 .form__block-attractions {
@@ -41,6 +56,14 @@
 
 .form__block-impression {
   margin: 0;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 22px;
+  }
 }
 
 .form__block-review {
@@ -55,7 +78,7 @@
 
   @media (min-width: $tablet) {
     position: relative;
-    width: 324px;
+    width: 480px;
     margin: 0 0 42px;
   }
 }

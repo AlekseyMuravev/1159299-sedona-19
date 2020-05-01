@@ -35,7 +35,6 @@
         </picture>
       </a>
     </div>
-    <div class="header__menu-toggle"></div>
     <button class="header__toggle toggle" type="button">
       <span class="toggle__line"></span>
     </button>
@@ -43,88 +42,85 @@
   <main>
     <div class="promo">
       <img class="promo__text" src="img/text-sedona.svg" alt="Sedona" width="229" height="39">
-      <picture>
-        <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg">
-        <img class="promo__triangle" src="img/bg-intro-triangle-mobile.svg" alt="welcome Sedona" width="281"
-          height="214">
-      </picture>
     </div>
-    <div class="introduction">
+    <div class="introduction introduction--form">
       <h1>Оставьте свой отзыв</h1>
       <p>Помогите&nbsp;нашим&nbsp;отелям&nbsp;стать&nbsp;лучше! Оставьте отзыв о них, а также о посещенных вами
         достопримечательностях
       </p>
     </div>
     <form class="form" action="https://echo.htmlacademy.ru">
-      <div class="form__block-impression">
+      <div class="form__block-impression impression">
         <h2>Ваше общее впечатление:</h2>
-        <div class="form__radio-wraper">
-          <input class="radio" id="impression" type="radio" name="impression" checked>
-          <label class="radio-label" for="impression">Скорее положительное</label>
+        <div class="impression__radio-wraper radio">
+          <input class="radio__input" id="impression" type="radio" name="impression" checked>
+          <label class="radio__label" for="impression">Скорее положительное</label>
         </div>
-        <div class="form__radio-wraper">
-          <input class="radio" id="impression-tw" type="radio" name="impression">
-          <label class="radio-label" for="impression-tw">Скорее отрицательное</label>
+        <div class="impression__radio-wraper radio">
+          <input class="radio__input" id="impression-tw" type="radio" name="impression">
+          <label class="radio__label" for="impression-tw">Скорее отрицательное</label>
         </div>
-        <div class="form__radio-wraper">
-          <input class="radio" id="impression-th" type="radio" name="impression">
-          <label class="radio-label" for="impression-th">Затрудняюсь ответить</label>
+        <div class="impression__radio-wraper radio">
+          <input class="radio__input" id="impression-th" type="radio" name="impression">
+          <label class="radio__label" for="impression-th">Затрудняюсь ответить</label>
         </div>
       </div>
-      <div class="form__block form__block--name">
+      <div class="form__block form-block form-block--name">
         <h2>Представьтесь:</h2>
-        <div class="form__block-wraper">
-          <label>Имя*:</label>
-          <input type="text" name="name" value="Петр">
+        <div class="form-block__wraper text-input">
+          <label class="text-input__label">Имя*:</label>
+          <input class="text-input__input" type="text" name="name" value="Петр">
         </div>
-        <div class="form__block-wraper">
-          <label>Фамилия*:</label>
-          <input type="text" name="surname" value="Иванов">
+        <div class="form-block__wraper text-input">
+          <label class="text-input__label">Фамилия*:</label>
+          <input class="text-input__input" type="text" name="surname" value="Иванов">
         </div>
-        <div class="form__block-wraper">
-          <label>Отчество:</label>
-          <input type="text" name="patronymic" value="Александрович">
+        <div class="form-block__wraper text-input">
+          <label class="text-input__label">Отчество:</label>
+          <input class="text-input__input" type="text" name="patronymic" value="Александрович">
         </div>
       </div>
-      <div class="form__block form__block--contact">
+      <div class="form__block form-block form-block--contact">
         <h2>Контактная информация:</h2>
-        <div class="form__block-wraper form__block-wraper--phone">
-          <label for="phone"><span class="desktop-none">Контактный</span> телефон*:</label>
-          <input type="tel" id="phone" name="phone" value="Введиет телефон">
+        <div class="form-block__wraper text-input text-input--phone">
+          <label class="text-input__label" for="phone"><span class="form__desktop-none">Контактный</span>
+            телефон*:</label>
+          <input class="text-input__input" type="tel" id="phone" name="phone" value="Введиет телефон">
         </div>
-        <div class="form__block-wraper form__block-wraper--mail">
-          <label for="email">Электронная почта*:</label>
-          <input type="email" id="email" name="email" value="Введиет e-mail">
+        <div class="form-block__wraper text-input text-input--mail">
+          <label class="text-input__label" for="email">Электронная почта*:</label>
+          <input class="text-input__input" type="email" id="email" name="email" value="Введиет e-mail">
         </div>
       </div>
-      <div class="form__block-attractions">
+      <div class="form__block-attractions attractions">
         <h2>Посещенные достопримечательности:</h2>
-        <div class="form__checkbox-wraper checkbox">
+        <div class="attractions__checkbox-wraper checkbox">
           <input class="checkbox__input" id="bridge-devil" type="checkbox" name="bridge-devil" checked>
           <label class="checkbox__label" for="bridge-devil">Мост дьвола</label>
         </div>
-        <div class="form__checkbox-wraper checkbox">
+        <div class="attractions__checkbox-wraper checkbox">
           <input class="checkbox__input" id="mountain-bell" type="checkbox" name="mountain-bell" checked>
           <label class="checkbox__label" for="mountain-bell">Гора-Колокол</label>
         </div>
-        <div class="form__checkbox-wraper checkbox">
+        <div class="attractions__checkbox-wraper checkbox">
           <input class="checkbox__input" id="slide-park" type="checkbox" name="slide-park" checked>
           <label class="checkbox__label" for="slide-park">Слайд-парк</label>
         </div>
-        <div class="form__checkbox-wraper checkbox">
+        <div class="attractions__checkbox-wraper checkbox">
           <input class="checkbox__input" id="red-rocks" type="checkbox" name="red-rocks">
           <label class="checkbox__label" for="red-rocks">Красные скалы</label>
         </div>
       </div>
-      <div class="form__block-review">
+      <div class="form__block-review review">
         <h2>Опишите свои эмоции:</h2>
-        <textarea name="reviews" cols="27" rows="5">Опишите подробно все свои восторги</textarea>
+        <textarea class="review__textarea" name="reviews" cols="27"
+          rows="5">Опишите подробно все свои восторги</textarea>
       </div>
       <button class="form__button-submit" type="submit">Отправить отзыв</button>
-      <p class="mobile-none">* — обязательные поля</p>
+      <p class="form__mobile-none">* — обязательные поля</p>
     </form>
   </main>
-  <footer class="footer">
+  <footer class="footer footer--form">
     <a class="footer__hashtag" href="#">#visitsedona</a>
     <ul class="footer__social social">
       <li class="social__item">

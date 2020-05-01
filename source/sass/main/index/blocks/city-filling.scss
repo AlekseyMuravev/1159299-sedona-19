@@ -16,12 +16,18 @@
     display: block;
     text-align: center;
     width: 33.33%;
-    padding: 63px 18px 65px;
+    padding: 60px 18px 48px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 60px 18px 68px;
   }
 }
 
 .city-filling:first-of-type {
-  padding-top: 25px;
+  @media (max-width: 767px) {
+    padding-top: 25px;
+  }
 }
 
 .city-filling__text {

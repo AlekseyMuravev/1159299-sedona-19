@@ -1,0 +1,117 @@
+.site-list {
+  list-style: none;
+  width: auto;
+  padding: 0;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.site-list__item {
+  width: auto;
+  text-align: center;
+  background-color: $palette-primary;
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+
+  @media (max-width: 767px) {
+    &:hover {
+      background-color: $palette-primary-hover;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &:active {
+      background-color: $palette-primary-active;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &:disabled {
+      background-color: $palette-primary-disabled;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    width: 19.9%;
+    background-color: $color-text-on-primary;
+    border-bottom: none;
+  }
+
+  @media (min-width: $tablet) {
+    &:nth-child(2) {
+      margin-right: 10.15%;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    &:nth-child(3) {
+      margin-left: 10.15%;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    width: 239px;
+  }
+
+  @media (min-width: $desktop) {
+    &:nth-child(2) {
+      margin-right: 122px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &:nth-child(3) {
+      margin-left: 122px;
+    }
+  }
+}
+
+.site-list__item a {
+  display: block;
+  font-size: $font-size-heading-mobile;
+  font-weight: bold;
+  line-height: 40px;
+  color: $color-text-on-primary;
+  padding: 8px 0 7px;
+
+  @media (max-width: 767px) {
+    &:active {
+      color: $color-text-active;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    font-size: $font-size-paragraph;
+    line-height: 26px;
+    color: $color-heading;
+    padding: 14px 0 16px;
+  }
+
+  @media (min-width: $tablet) {
+    &:hover {
+      color: $color-link-tablet-hover;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    &:active {
+      color: $color-link-tablet-down;
+    }
+  }
+}
+
+.site-list__item--active a {
+  @media (min-width: $tablet) {
+    color: $color-link-tablet-active;
+
+    &:hover {
+      color: $color-link-tablet-active-hover;
+    }
+
+    &:active {
+      color: $color-link-tablet-active-down;
+    }
+  }
+}

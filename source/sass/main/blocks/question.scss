@@ -4,15 +4,24 @@
   padding: 33px 15px 25px;
 
   @media (min-width: $tablet) {
-    padding: 45px 15px 25px;
+    padding: 66px 15px 25px;
   }
 
   @media (min-width: $desktop) {
     max-width: $desktop;
+    padding: 72px 15px 25px;
   }
 
   &--index {
     padding: 26px 15px 25px;
+
+    @media (min-width: $tablet) {
+      padding: 56px 15px 32px;
+    }
+
+    @media (min-width: $desktop) {
+      padding-bottom: 36px;
+    }
   }
 }
 
@@ -24,13 +33,23 @@
   margin: 0 auto 25px;
 
   @media (min-width: $tablet) {
-    font-size: 30px;
+    font-size: $line-height-heading + 4px;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 30px;
   }
 }
 
 .question--index h2 {
   font-size: $font-size-heading-tablet;
-  margin: 0 auto 15px;
+  margin: 0 auto 20px;
+
+  @media (min-width: $tablet) {
+    font-size: $line-height-heading + 4px;
+    margin-bottom: 30px;
+  }
 }
 
 .question p {

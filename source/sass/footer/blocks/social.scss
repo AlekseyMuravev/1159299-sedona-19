@@ -3,10 +3,6 @@
   display: flex;
   width: 153px;
   padding: 0;
-
-  @media (min-width: $tablet) {
-    margin: 0;
-  }
 }
 
 .social__item {
