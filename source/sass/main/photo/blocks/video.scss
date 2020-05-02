@@ -1,13 +1,33 @@
 .video {
+  position: relative;
   min-width: $mobile;
   background-color: $color-text-on-primary;
+  padding-bottom: 105px;
+
+  @media (min-width: $tablet) {
+    padding: 0 60px 40px;
+  }
 
   @media (min-width: $desktop) {
     max-width: $desktop;
+    padding: 0 200px 85px;
     margin: 0 auto;
   }
 }
 
 .video__question {
   margin: 0;
+}
+
+.video__video {
+  position: relative;
+  width: 100%;
+  min-height: 201px;
+  line-height: 0;
+  margin: 0;
+}
+
+.video__video img {
+  width: 100%;
+  height: 100%;
 }

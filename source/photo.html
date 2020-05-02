@@ -45,7 +45,8 @@
     </div>
     <div class="introduction">
       <h1>Фото и видео</h1>
-      <p>Не можете решиться на путешествие из-за курса? Фотографии&nbsp;помогут вам забыть о политике и экономике</p>
+      <p>Не можете решиться на путешествие из-за курса? Фотографии&nbsp;помогут вам забыть о политике и экономике
+      </p>
     </div>
     <div class="photo">
       <ul class="photo__list photo-list">
@@ -136,9 +137,33 @@
       </ul>
     </div>
     <div class="video">
-      <div class="video__question question">
+      <div class="video__question question question--photo">
         <h2>Все еще сомневаетесь?</h2>
         <p>Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+      </div>
+      <div class="video__video">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg">
+          <source media="(min-width: 600px)" srcset="img/video-tablet@1x.jpg">
+          <img src="img/video-mobile@1x.jpg" alt="Гора - мост дьявола" width="280" height="280">
+        </picture>
+        <div class="video__controls controls">
+          <div class="controls__volume">
+            <div class="controls__volume-scale"></div>
+            <div class="controls__volume-slider"></div>
+          </div>
+          <div class="controls__buttons">
+            <button type="button" class="controls__replay">
+              <img src="img/icon-video-replay.svg" title="Запустить заново">
+            </button>
+            <button type="button" class="controls__subtitles">
+              <img src="img/icon-video-subtitles.svg" title="Скрыть титры">
+            </button>
+            <button type="button" class="controls__fullscreen">
+              <img src="img/icon-video-fullscreen.svg" title="На полный экран">
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </main>

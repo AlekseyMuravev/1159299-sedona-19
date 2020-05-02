@@ -1,0 +1,111 @@
+.controls {
+  position: absolute;
+  bottom: -65px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 87.5%;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+    bottom: 0;
+    padding: 45px 41px 45px 35px;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+.controls__volume {
+  position: relative;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 22px 23px 20px 22px;
+
+  @media (min-width: $tablet) {
+    width: 68%;
+    padding: 0;
+    margin-left: 10.35%;
+  }
+
+  @media (min-width: $desktop) {
+    width: 75%;
+    margin-left: 8%;
+  }
+}
+
+.controls__volume-scale {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.controls__volume-slider {
+  position: absolute;
+  top: 18px;
+  left: 20.35%;
+  width: 9px;
+  height: 9px;
+  background-color: #ffffff;
+  border-radius: 50%;
+
+  @media (min-width: $tablet) {
+    top: -3px;
+    left: 28.55%;
+  }
+
+  @media (min-width: $desktop) {
+    left: 21%;
+  }
+}
+
+.controls__buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 22px 8.2% 23px 8.9%;
+
+  @media (min-width: $tablet) {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: transparent;
+    padding: 0 41px 0 35px;
+  }
+}
+
+.controls__replay {
+  width: 16px;
+  height: 20px;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+
+.controls__replay img {
+  width: 16px;
+  height: 20px;
+}
+
+.controls__subtitles {
+  width: 32px;
+  height: 20px;
+  background-color: transparent;
+  padding: 0;
+  margin-left: 43.5%;
+  border: none;
+
+  @media (min-width: $tablet) {
+    margin-left: 77%;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 82%;
+  }
+}
+
+.controls__fullscreen {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}

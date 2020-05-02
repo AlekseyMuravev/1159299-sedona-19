@@ -23,6 +23,16 @@
       padding-bottom: 36px;
     }
   }
+
+  &--photo {
+    @media (min-width: $tablet) {
+      padding: 66px 15px 64px;
+    }
+
+    @media (min-width: $desktop) {
+      padding: 71px 15px 61px;
+    }
+  }
 }
 
 .question h2 {
