@@ -1,27 +1,50 @@
-@media (min-width: 320px) {
-  .search {
-    width: 320px;
-  }
-}
-
-@media (min-width: 768px) {
-  .search {
-    width: 768px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .search {
-    width: 1200px;
-  }
-}
-
 .search {
+  min-width: $mobile;
   padding: 0;
+  background-color: $color-text-on-primary;
+
+  @media (min-width: $desktop) {
+    max-width: $desktop;
+    margin: 0 auto;
+  }
+}
+
+.search__question {
   margin: 0;
 }
 
+.search__button a {
+  margin: 0 auto 49px;
 
-.search__search-question {
-  margin: 0;
+  @include button;
+
+  @media (min-width: $tablet) {
+    width: 458px;
+    margin-bottom: 58px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 66px;
+  }
+}
+
+.map {
+  position: relative;
+  width: 100%;
+  height: 350px;
+}
+
+.map__marker {
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.map__image {
+  width: 100%;
+  height: 100%;
 }

@@ -1,0 +1,104 @@
+.place-item {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  color: $color-text-on-primary;
+  background-color: $palette-primary;
+  padding: 37px 12px 25px;
+
+  @media (min-width: $tablet) {
+    width: 33.33%;
+    padding: 46px 30px 20px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 400px;
+    padding: 52px 30px 20px;
+  }
+
+  &--first {
+    @media (max-width: 767px) {
+      padding: 18.15% 12px 25px;
+
+      @media (max-width: 768px) {
+        background: url("../img/bg-triangle.svg") no-repeat;
+        background-color: $palette-primary;
+        background-position: 0 -11.47%;
+        background-size: 100% auto;
+      }
+    }
+  }
+
+  &--grey {
+    position: relative;
+    color: $color-heading;
+    background-color: #eeeeee;
+    padding: 27px 12px 13px;
+
+    @media (min-width: $tablet) {
+      padding: 45px 12px 22px;
+    }
+
+    @media (min-width: $desktop) {
+      padding-bottom: 44px;
+    }
+  }
+}
+
+.place-item h3 {
+  font-size: $font-size-heading-mobile;
+  max-width: 256px;
+  margin: 0 auto 8px;
+
+  @media (min-width: $tablet) {
+    font-size: $font-size-heading-tablet;
+    max-width: 182px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 auto 10px;
+  }
+}
+
+.place-item p {
+  font-size: $font-size-paragraph;
+  line-height: $line-height-paragraph;
+  max-width: 300px;
+  margin: 0 auto 16px;
+
+  @media (min-width: $tablet) {
+    font-size: $font-size-paragraph;
+    line-height: $line-height-paragraph;
+    max-width: 182px;
+    margin: 0 auto 23px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: $font-size-paragraph;
+    line-height: $line-height-paragraph;
+    max-width: 285px;
+    margin-bottom: 22px;
+  }
+}
+
+.place-item--grey p {
+  color: $color-paragraph;
+
+  @media (min-width: $tablet) {
+    width: 170px;
+  }
+}
+
+.place-item__border {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 1px;
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}

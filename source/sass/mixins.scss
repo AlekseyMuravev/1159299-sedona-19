@@ -1,0 +1,56 @@
+@mixin button {
+  display: flex;
+  justify-content: center;
+  font-size: $font-size-heading-mobile;
+  font-weight: bold;
+  line-height: $line-height-heading;
+  text-align: center;
+  text-transform: inherit;
+  color: $color-text-on-primary;
+  background-color: $palette-primary;
+  border: none;
+  width: 280px;
+  padding: 16px;
+
+  &:hover {
+    color: $color-text-active;
+    background-color: $palette-primary-hover;
+  }
+
+  &:active {
+    background-color: $palette-primary-active;
+  }
+
+  &:disabled {
+    background-color: $palette-primary-disabled;
+  }
+}
+
+@mixin modal {
+  text-align: center;
+  min-width: $mobile;
+  background-color: $color-text-on-primary;
+  padding: 46px 0 49px;
+  margin: 10px auto;
+  box-shadow:
+    0 10px 10px 0 rgba(0, 1, 1, 0.2),
+    0 -5px 5px 0 rgba(0, 1, 1, 0.2);
+}
+
+@mixin input-none {
+  position: absolute;
+  appearance: none;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+@mixin radio-checkbox-label {
+  color: $color-heading;
+  position: relative;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: none;
+  padding: 13px 0 0 24%;
+  cursor: pointer;
+}

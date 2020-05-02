@@ -1,0 +1,49 @@
+.modal {
+  @include modal;
+  width: 100%;
+  padding: 46px 0 0;
+}
+
+@media (min-width: $tablet) {
+  .modal {
+    width: 640px;
+  }
+}
+
+.modal h2 {
+  font-size: $font-size-heading-mobile;
+  width: 247px;
+  margin: 0 auto 30px;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    line-height: 40px;
+    width: 414px;
+  }
+}
+
+.modal p {
+  font-size: $font-size-paragraph;
+  line-height: 24px;
+  width: 246px;
+  color: $color-paragraph;
+  margin: 0 auto 38px;
+
+  @media (min-width: $tablet) {
+    width: 464px;
+  }
+}
+
+.modal__wrapper-button {
+  background-color: #f2f2f2;
+  padding: 20px 0;
+}
+
+.modal__button {
+  @include button;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: 458px;
+  }
+}

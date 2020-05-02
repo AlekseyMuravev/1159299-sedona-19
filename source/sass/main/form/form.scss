@@ -1,0 +1,84 @@
+.form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-width: $mobile;
+  padding: 0;
+  margin: 0 auto;
+  background-color: $color-text-on-primary;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: $desktop;
+    padding: 0 120px;
+  }
+}
+
+.form__mobile-none {
+  display: none;
+  font: inherit;
+  font-size: $font-size-paragraph;
+  line-height: $line-height-heading;
+  color: $color-paragraph;
+
+  @media (min-width: $tablet) {
+    display: inline;
+    margin-top: 18px;
+  }
+}
+
+.form__desktop-none {
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.form__block {
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 22px;
+  }
+}
+
+.form__block-attractions {
+  margin: 0;
+}
+
+.form__block-impression {
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 22px;
+  }
+}
+
+.form__block-review {
+  margin: 0;
+}
+
+.form__button-submit {
+  width: 280px;
+  margin: 0 auto 42px;
+
+  @include button;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    width: 480px;
+    margin: 0 0 42px;
+  }
+}

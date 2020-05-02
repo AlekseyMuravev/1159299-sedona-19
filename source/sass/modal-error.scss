@@ -1,0 +1,44 @@
+.modal-error {
+  @include modal;
+  padding: 46px 40px 35px;
+}
+
+@media (min-width: $tablet) {
+  .modal-error {
+    width: 400px;
+  }
+}
+
+.modal-error > h2 {
+  font-size: $font-size-heading-mobile;
+  width: 247px;
+  margin: 0 auto 10px;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.modal-error > p {
+  font-size: $font-size-paragraph;
+  line-height: 24px;
+  width: 246px;
+  color: $color-paragraph;
+  margin: 0 auto 30px;
+
+  @media (min-width: $tablet) {
+    width: 320px;
+  }
+}
+
+.modal-error__button {
+  @include button;
+
+  width: 180px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: 272px;
+  }
+}

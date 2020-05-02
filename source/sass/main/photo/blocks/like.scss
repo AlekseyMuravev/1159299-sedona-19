@@ -1,0 +1,17 @@
+.like {
+  display: flex;
+  align-items: center;
+}
+
+.like__button {
+  width: 23px;
+  height: 21px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin-top: 0;
+}
+
+.like p {
+  margin: 3px 0 0 8px;
+}
