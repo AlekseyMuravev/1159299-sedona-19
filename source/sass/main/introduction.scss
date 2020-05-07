@@ -1,7 +1,9 @@
 .introduction {
+  min-width: $mobile;
   text-align: center;
   background-color: #ffffff;
   padding: 39px 8px 27px;
+  margin: 0;
   position: relative;
   min-width: $mobile;
   border-bottom: 1px solid rgba(1, 1, 1, 0.2);

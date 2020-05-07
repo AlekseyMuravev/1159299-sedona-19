@@ -15,3 +15,17 @@
 .like p {
   margin: 3px 0 0 8px;
 }
+
+.like__icon-like {
+  width: 22px;
+  height: 20px;
+  fill: #b2b2b2;
+
+  @media (min-width: $tablet) {
+    fill: #a9a9a9;
+  }
+
+  @media (min-width: $desktop) {
+    fill: #ffffff;
+  }
+}

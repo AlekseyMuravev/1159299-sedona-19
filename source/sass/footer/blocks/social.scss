@@ -5,14 +5,49 @@
   padding: 0;
 }
 
-.social__item {
+.social__link {
+  display: block;
   width: 47px;
   height: 48px;
   background-color: $palette-primary;
   padding: 12px 5px;
   margin: 0 6px 6px 0;
+
+  &:hover {
+    background-color: $palette-primary-hover;
+  }
+
+  &:active {
+    background-color: $palette-primary-active;
+  }
 }
 
 .social__item:nth-of-type(3n) {
   margin-right: 0;
+}
+
+.social__icon {
+  fill: $palette-site;
+
+  &:active {
+    fill: #82b2cf;
+  }
+
+  &--twitter {
+    width: 18px;
+    height: 14px;
+    fill: $palette-site;
+  }
+
+  &--facebook {
+    width: 9px;
+    height: 18px;
+    fill: $palette-site;
+  }
+
+  &--youtube {
+    width: 20px;
+    height: 14px;
+    fill: $palette-site;
+  }
 }

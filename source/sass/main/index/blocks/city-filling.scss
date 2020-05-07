@@ -81,7 +81,40 @@
   }
 }
 
-.city-filling__image img {
-  width: 100%;
-  height: 100%;
+.city-filling__icon {
+  fill: $palette-primary;
+
+  &--house {
+    width: 37px;
+    height: 36px;
+    fill: $palette-primary;
+
+    @media (min-width: $tablet) {
+      width: 75px;
+      height: 72px;
+    }
+  }
+
+  &--burger {
+    width: 40px;
+    height: 35px;
+    fill: $palette-primary;
+
+    @media (min-width: $tablet) {
+      width: 77px;
+      height: 68px;
+      margin-top: 3px;
+    }
+  }
+
+  &--gift {
+    width: 32px;
+    height: 38px;
+    fill: $palette-primary;
+
+    @media (min-width: $tablet) {
+      width: 64px;
+      height: 75px;
+    }
+  }
 }

@@ -1,7 +1,6 @@
 .text-input {
-  &--phone {
-    position: relative;
-
+  &--phone,
+  &--mail {
     &::after {
       content: "";
       position: absolute;
@@ -9,9 +8,16 @@
       bottom: 0;
       width: 56px;
       height: 57px;
-      background: url("../img/icon-phone.svg") no-repeat;
-      background-color: #e6e6e6;
-      background-position: center;
+    }
+  }
+
+  &--phone {
+    position: relative;
+
+    &::after {
+      background:
+        url("../img/icon-phone.svg") no-repeat center,
+      #e6e6e6;
     }
 
     @media (min-width: $desktop) {
@@ -25,15 +31,9 @@
     position: relative;
 
     &::after {
-      content: "";
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      width: 56px;
-      height: 57px;
-      background: url("../img/icon-mail.svg") no-repeat;
-      background-color: #e6e6e6;
-      background-position: center;
+      background:
+        url("../img/icon-mail.svg") no-repeat center,
+      #e6e6e6;
     }
 
     @media (min-width: $desktop) {
@@ -43,6 +43,30 @@
     }
   }
 }
+
+// .text-input--phone::after {
+//   content: "";
+//   position: absolute;
+//   right: 0;
+//   bottom: 0;
+//   width: 56px;
+//   height: 57px;
+//   background: url("../img/icon-phone.svg") no-repeat;
+//   background-color: #e6e6e6;
+//   background-position: center;
+// }
+
+// .text-input--mail::after {
+//   content: "";
+//   position: absolute;
+//   right: 0;
+//   bottom: 0;
+//   width: 56px;
+//   height: 57px;
+//   background: url("../img/icon-mail.svg") no-repeat;
+//   background-color: #e6e6e6;
+//   background-position: center;
+// }
 
 .form-block--name .text-input {
   display: flex;
@@ -91,6 +115,14 @@
 
   @media (min-width: $tablet) {
     margin: 6px 0 0;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: #ffffff;
   }
 }
 

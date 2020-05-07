@@ -13,11 +13,12 @@
   padding: 16px;
 
   &:hover {
-    color: $color-text-active;
+    color: $color-text-on-primary;
     background-color: $palette-primary-hover;
   }
 
   &:active {
+    color: $color-text-active;
     background-color: $palette-primary-active;
   }
 
