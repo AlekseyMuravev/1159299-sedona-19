@@ -39,11 +39,20 @@
   width: 100%;
   min-height: 160px;
   border: none;
+  border-radius: 0;
   background-color: #f2f2f2;
   padding: 18px 19px 12px;
   resize: none;
 
   @media (min-width: $desktop) {
     width: 960px;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: #ffffff;
   }
 }

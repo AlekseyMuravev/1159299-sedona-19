@@ -1,10 +1,25 @@
 .copyright {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 140px;
 }
 
 .copyright p {
   font-size: $font-size-paragraph;
   margin-top: 2px;
+}
+
+.copyright__icon-logo-htmlacademy {
+  width: 27px;
+  height: 34px;
+  fill: #000000;
+
+  &:hover {
+    fill: #81b3d2;
+  }
+
+  &:active {
+    fill: #b7b7b7;
+  }
 }

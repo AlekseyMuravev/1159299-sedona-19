@@ -26,8 +26,8 @@
 }
 
 .list-place__image {
-  width: 320px;
-  height: 260px;
+  width: 100%;
+  min-height: 260px;
 
   @media (min-width: $tablet) {
     line-height: 0;

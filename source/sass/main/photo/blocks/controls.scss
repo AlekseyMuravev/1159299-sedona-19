@@ -109,3 +109,42 @@
   padding: 0;
   border: none;
 }
+
+.controls__icon {
+  fill: #5c6870;
+
+  &:hover {
+    fill: #333333;
+  }
+
+  &:active {
+    fill: #b8b8b8;
+  }
+
+  @media (min-width: $tablet) {
+    fill: $palette-site;
+
+    &:hover {
+      fill: #c2c2c2;
+    }
+
+    &:active {
+      fill: #949494;
+    }
+  }
+
+  &--video-replay {
+    width: 16px;
+    height: 20px;
+  }
+
+  &--video-subtitles {
+    width: 32px;
+    height: 20px;
+  }
+
+  &--video-fullscreen {
+    width: 20px;
+    height: 20px;
+  }
+}
