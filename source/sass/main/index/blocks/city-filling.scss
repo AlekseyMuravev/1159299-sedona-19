@@ -41,31 +41,25 @@
 }
 
 .city-filling h3 {
-  font-size: $font-size-heading-mobile;
-  line-height: $line-height-heading;
   margin: 0 0 13px;
 
   @media (min-width: $tablet) {
-    font-size: $font-size-heading-tablet;
     margin: 0 auto 20px;
   }
 }
 
 .city-filling p {
-  font-size: $font-size-paragraph;
-  line-height: $line-height-paragraph;
   color: $color-paragraph;
+  width: 235px;
   margin: 0;
 
   @media (min-width: $tablet) {
-    font-size: $font-size-paragraph;
-    line-height: $line-height-paragraph;
-    max-width: 180px;
+    width: 180px;
     margin: 0 auto 15px;
   }
 
   @media (min-width: $desktop) {
-    max-width: 320px;
+    width: 320px;
   }
 }
 

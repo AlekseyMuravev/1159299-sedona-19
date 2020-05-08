@@ -2,13 +2,12 @@
   @include modal;
   width: 100%;
   padding: 46px 0 0;
-}
 
-@media (min-width: $tablet) {
-  .modal {
-    width: 640px;
+  @media (min-width: $tablet) {
+      width: 640px;
   }
 }
+
 
 .modal h2 {
   font-size: $font-size-heading-mobile;

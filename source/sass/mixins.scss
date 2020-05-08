@@ -25,6 +25,10 @@
   &:disabled {
     background-color: $palette-primary-disabled;
   }
+
+  @media (min-width: $tablet) {
+    font-size: $font-size-heading-tablet;
+  }
 }
 
 @mixin modal {
@@ -34,8 +38,8 @@
   padding: 46px 0 49px;
   margin: 10px auto;
   box-shadow:
-    0 10px 10px 0 rgba(0, 1, 1, 0.2),
-    0 -5px 5px 0 rgba(0, 1, 1, 0.2);
+    0 5px 10px 0 rgba(0, 1, 1, 0.2),
+    0 0 3px 0 rgba(0, 1, 1, 0.2);
 }
 
 @mixin input-none {

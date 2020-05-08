@@ -56,9 +56,19 @@
         <li class="photo-list__item photo-item photo-item--big">
           <div class="photo-item__image">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg">
-              <source media="(min-width: 600px)" srcset="img/photo-sunset-tablet@1x.jpg">
-              <img src="img/photo-sunset-mobile@1x.jpg" alt="Дорога, уходящая в закат" width="280" height="280">
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1200px)"
+                srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+              <source media="(min-width: 600px)"
+                srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+              <img src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x"
+                alt="Дорога, уходящая в закат" width="280" height="280">
             </picture>
           </div>
           <div class="photo-item__text-wrapper">
@@ -69,7 +79,7 @@
             <div class="photo-item__like like">
               <button class="like__button" title="Нравится" type="button">
                 <svg class="like__icon-like">
-                  <use xlink:href="#icon-like" alt="like" width="22" height="20"></use>
+                  <use xlink:href="#icon-like" width="22" height="20"></use>
                 </svg>
               </button>
               <p>1350</p>
@@ -79,9 +89,19 @@
         <li class="photo-list__item photo-item">
           <div class="photo-item__image">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg">
-              <source media="(min-width: 600px)" srcset="img/photo-cactus-tablet@1x.jpg">
-              <img src="img/photo-cactus-mobile@1x.jpg" alt="Кактус на фоне гор" width="280" height="280">
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/photo-cactus-mobile@1x.webp 1x, img/photo-cactus-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1200px)"
+                srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+              <source media="(min-width: 600px)"
+                srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+              <img src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x"
+                alt="Кактус на фоне гор" width="280" height="280">
             </picture>
           </div>
           <div class="photo-item__text-wrapper">
@@ -92,7 +112,7 @@
             <div class="photo-item__like like">
               <button class="like__button" title="Нравится" type="button">
                 <svg class="like__icon-like">
-                  <use xlink:href="#icon-like" alt="like" width="22" height="20"></use>
+                  <use xlink:href="#icon-like" width="22" height="20"></use>
                 </svg>
               </button>
               <p>143</p>
@@ -102,9 +122,19 @@
         <li class="photo__item photo-item">
           <div class="photo-item__image">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg">
-              <source media="(min-width: 600px)" srcset="img/photo-roads-tablet@1x.jpg">
-              <img src="img/photo-roads-mobile@1x.jpg" alt="Серпантин среди деревьев" width="280" height="280">
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/photo-roads-mobile@1x.webp 1x, img/photo-roads-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1200px)"
+                srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+              <source media="(min-width: 600px)"
+                srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+              <img src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x"
+                alt="Серпантин среди деревьев" width="280" height="280">
             </picture>
           </div>
           <div class="photo-item__text-wrapper">
@@ -115,7 +145,7 @@
             <div class="photo-item__like like">
               <button class="like__button" title="Нравится" type="button">
                 <svg class="like__icon-like">
-                  <use xlink:href="#icon-like" alt="like" width="22" height="20"></use>
+                  <use xlink:href="#icon-like" width="22" height="20"></use>
                 </svg>
               </button>
               <p>96</p>
@@ -125,9 +155,19 @@
         <li class="photo__item photo-item">
           <div class="photo-item__image">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg">
-              <source media="(min-width: 600px)" srcset="img/photo-bridge-tablet@1x.jpg">
-              <img src="img/photo-bridge-mobile@1x.jpg" alt="Гора - мост дьявола" width="280" height="280">
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/photo-bridge-mobile@1x.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1200px)"
+                srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 600px)"
+                srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+              <img src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x"
+                alt="Гора - мост дьявола" width="280" height="280">
             </picture>
           </div>
           <div class="photo-item__text-wrapper">
@@ -138,7 +178,7 @@
             <div class="photo-item__like like">
               <button class="like__button" title="Нравится" type="button">
                 <svg class="like__icon-like">
-                  <use xlink:href="#icon-like" alt="like" width="22" height="20"></use>
+                  <use xlink:href="#icon-like" width="22" height="20"></use>
                 </svg>
               </button>
               <p>254</p>
@@ -154,9 +194,17 @@
       </div>
       <div class="video__video">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg">
-          <source media="(min-width: 600px)" srcset="img/video-tablet@1x.jpg">
-          <img src="img/video-mobile@1x.jpg" alt="Гора - мост дьявола" width="280" height="280">
+          <source type="image/webp" media="(min-width: 1200px)"
+            srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 1200px)"
+            srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 1200px)"
+            srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
+
+          <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+          <source media="(min-width: 600px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+          <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео про Sedona" width="280"
+            height="280">
         </picture>
         <div class="video__controls controls">
           <div class="controls__volume">
@@ -166,17 +214,17 @@
           <div class="controls__buttons">
             <button type="button" class="controls__replay">
               <svg class="controls__icon controls__icon--video-replay">
-                <use xlink:href="#icon-video-replay" alt="like" width="16" height="20" title="Запустить заново"></use>
+                <use xlink:href="#icon-video-replay" width="16" height="20"></use>
               </svg>
             </button>
             <button type="button" class="controls__subtitles">
               <svg class="controls__icon controls__icon--video-subtitles">
-                <use xlink:href="#icon-video-subtitles" alt="like" width="32" height="20" title="Скрыть титры"></use>
+                <use xlink:href="#icon-video-subtitles" width="32" height="20"></use>
               </svg>
             </button>
             <button type="button" class="controls__fullscreen">
               <svg class="controls__icon controls__icon--video-fullscreen">
-                <use xlink:href="#icon-video-fullscreen" alt="like" width="20" height="20" title="На полный экран">
+                <use xlink:href="#icon-video-fullscreen" width="20" height="20">
                 </use>
               </svg>
             </button>

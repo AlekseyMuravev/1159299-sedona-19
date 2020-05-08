@@ -72,11 +72,11 @@
         <h2>Представьтесь:</h2>
         <div class="form-block__wraper text-input">
           <label class="text-input__label">Имя*:</label>
-          <input class="text-input__input" type="text" name="name" value="Петр">
+          <input class="text-input__input" type="text" name="name" value="Петр" required>
         </div>
         <div class="form-block__wraper text-input">
           <label class="text-input__label">Фамилия*:</label>
-          <input class="text-input__input" type="text" name="surname" value="Иванов">
+          <input class="text-input__input" type="text" name="surname" value="Иванов" required>
         </div>
         <div class="form-block__wraper text-input">
           <label class="text-input__label">Отчество:</label>
@@ -88,11 +88,11 @@
         <div class="form-block__wraper text-input text-input--phone">
           <label class="text-input__label" for="phone"><span class="form__desktop-none">Контактный</span>
             телефон*:</label>
-          <input class="text-input__input" type="tel" id="phone" name="phone" value="Введиет телефон">
+          <input class="text-input__input" type="tel" id="phone" name="phone" value="Введиет телефон" required>
         </div>
         <div class="form-block__wraper text-input text-input--mail">
           <label class="text-input__label" for="email">Электронная почта*:</label>
-          <input class="text-input__input" type="email" id="email" name="email" value="Введиет e-mail">
+          <input class="text-input__input" type="email" id="email" name="email" value="Введиет e-mail" required>
         </div>
       </div>
       <div class="form__block-attractions attractions">
@@ -157,11 +157,6 @@
       </a>
     </div>
   </footer>
-  <div class="modal-error">
-    <h2>Что-то пошло не так!</h2>
-    <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <button class="modal-error__button" type="button">Ок</button>
-  </div>
   <div class="modal">
     <h2>Ваш отзыв отправлен!</h2>
     <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.
@@ -169,6 +164,11 @@
     <div class="modal__wrapper-button">
       <button class="modal__button" type="button">Закрыть окно</button>
     </div>
+  </div>
+  <div class="modal-error">
+    <h2>Что-то пошло не так!</h2>
+    <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <button class="modal-error__button" type="button">Ок</button>
   </div>
 </body>
 

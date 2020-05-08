@@ -24,13 +24,13 @@
 .attractions__checkbox-wraper {
   margin: 0 0 54px 0;
 
+  &:last-of-type {
+    margin: 0 0 42px 0;
+  }
+
   @media (min-width: $tablet) {
     margin: 0 0 63px 0;
   }
-}
-
-.attractions__checkbox-wraper:last-of-type {
-  margin: 0 0 42px 0;
 }
 
 .attractions h2 {

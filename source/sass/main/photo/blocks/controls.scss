@@ -9,14 +9,14 @@
     width: 100%;
     bottom: 0;
     padding: 45px 41px 45px 35px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
   }
 }
 
 .controls__volume {
   position: relative;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 22px 23px 20px 22px;
 
   @media (min-width: $tablet) {

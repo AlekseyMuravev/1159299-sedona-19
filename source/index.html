@@ -59,9 +59,18 @@
         </div>
         <div class="list-place__image">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg">
-            <source media="(min-width: 600px)" srcset="img/main-city-tablet@1x.jpg">
-            <img src="img/main-city-mobile@1x.jpg" alt="Фото города" width="320" height="260">
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/main-city-desktop@1x.webp 1x, img/main-city-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/main-city-tablet@1x.webp 1x, img/main-city-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/main-city-mobile@1x.webp 1x, img/main-city-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1200px)"
+              srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+            <source media="(min-width: 600px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+            <img src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="Фото города" width="320"
+              height="260">
           </picture>
         </div>
       </div>
@@ -88,7 +97,8 @@
             <p>Всегда заказывайте фирменный бургер, вы&nbsp;не разочаруетесь!</p>
           </div>
         </li>
-        <li class="list-place__item place-item city-filling">
+        <li class="list-place__item place-item city-filling
+        city-filling--souvenirs">
           <div class="city-filling__image">
             <svg class="city-filling__icon city-filling__icon--gift" width="32" height="38">
               <use xlink:href="#icon-gift"></use>
@@ -105,9 +115,19 @@
       <div class="advantages__list-place list-place">
         <div class="list-place__image">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg">
-            <source media="(min-width: 600px)" srcset="img/main-bridge-tablet@1x.jpg">
-            <img src="img/main-bridge-mobile@1x.jpg" alt="Фото города" width="320" height="260">
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/main-bridge-desktop@1x.webp 1x, img/main-bridge-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/main-bridge-tablet@1x.webp 1x, img/main-bridge-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/main-bridge-mobile@1x.webp 1x, img/main-bridge-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1200px)"
+              srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+            <source media="(min-width: 600px)"
+              srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+            <img src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Фото города"
+              width="320" height="260">
           </picture>
         </div>
         <div class="list-place__item place-item">
@@ -120,19 +140,19 @@
         <li class="list-place__item place-item place-item--grey">
           <h3>Небольшая площадь</h3>
           <p> — <span>№3</span> —</p>
-          <p>Все интересные места находятся очень близко</p>
+          <p>Все&nbsp;интересные&nbsp;места находятся очень близко</p>
           <div class="place-item__border"></div>
         </li>
         <li class="list-place__item place-item place-item--grey">
           <h3>Красивая дорога</h3>
           <p>— <span>№4</span> —</p>
-          <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
+          <p>Ехать в седону из лас-&nbsp;вегаса совсем не&nbsp;скучно!</p>
           <div class="place-item__border"></div>
         </li>
         <li class="list-place__item place-item place-item--grey">
           <h3>Мало туристов</h3>
           <p>— <span>№5</span> —</p>
-          <p>Большинство едет в гранд каньон и&nbsp;толпится там</p>
+          <p>Большинство едет в гранд каньон и толпится там</p>
         </li>
       </ul>
     </div>
@@ -148,13 +168,20 @@
       </div>
       <div class="search__map map">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
-          <source media="(min-width: 600px)" srcset="img/bg-map-tablet@1x.jpg">
-          <img class="map__image" src="img/bg-map-mobile@1x.jpg" alt="США, штат Аризона, город Седона" width="320"
-            height="350">
+          <source type="image/webp" media="(min-width: 1200px)"
+            srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 1200px)"
+            srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 1200px)"
+            srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+
+          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+          <source media="(min-width: 600px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+          <img class="map__image" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x"
+            alt="США, штат Аризона, город Седона" width="320" height="350">
         </picture>
         <div class="map__marker">
-          <img src="img/icon-map-marker.svg">
+          <img src="img/icon-map-marker.svg" width="27" height="27" alt="Map marker">
         </div>
       </div>
     </section>
