@@ -63,6 +63,13 @@
   }
 }
 
+.city-filling--souvenirs br {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+
 .city-filling__image {
   text-align: center;
   width: 40px;
