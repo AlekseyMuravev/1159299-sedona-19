@@ -78,7 +78,11 @@
 
   @media (min-width: $tablet) {
     position: relative;
-    width: 480px;
+    width: 324px;
     margin: 0 0 42px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 480px;
   }
 }

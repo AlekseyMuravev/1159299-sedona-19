@@ -17,7 +17,7 @@
     &::after {
       background:
         url("../img/icon-phone.svg") no-repeat center,
-      #e6e6e6;
+        #e6e6e6;
     }
 
     @media (min-width: $desktop) {
@@ -33,7 +33,7 @@
     &::after {
       background:
         url("../img/icon-mail.svg") no-repeat center,
-      #e6e6e6;
+        #e6e6e6;
     }
 
     @media (min-width: $desktop) {
@@ -43,30 +43,6 @@
     }
   }
 }
-
-// .text-input--phone::after {
-//   content: "";
-//   position: absolute;
-//   right: 0;
-//   bottom: 0;
-//   width: 56px;
-//   height: 57px;
-//   background: url("../img/icon-phone.svg") no-repeat;
-//   background-color: #e6e6e6;
-//   background-position: center;
-// }
-
-// .text-input--mail::after {
-//   content: "";
-//   position: absolute;
-//   right: 0;
-//   bottom: 0;
-//   width: 56px;
-//   height: 57px;
-//   background: url("../img/icon-mail.svg") no-repeat;
-//   background-color: #e6e6e6;
-//   background-position: center;
-// }
 
 .form-block--name .text-input {
   display: flex;
@@ -91,7 +67,6 @@
   }
 }
 
-
 .form-block--contact .text-input__label {
   margin: 0 0 0 22px;
 
@@ -107,9 +82,9 @@
   line-height: 26px;
   color: #000000;
   background-color: #f2f2f2;
-  border: none;
+  border: transparent;
   border-radius: 0;
-  padding: 18px 0 14px 20px;
+  padding: 18px 58px 14px 20px;
   margin: 8px 0 0;
   width: 100%;
 
@@ -124,6 +99,10 @@
   &:focus {
     background-color: #ffffff;
   }
+
+  &--error {
+    border: 2px solid red;
+  }
 }
 
 .form-block--contact > .text-input {
@@ -134,6 +113,7 @@
 }
 
 .form-block--name .text-input__input {
+  padding: 18px 0 14px 20px;
   margin: 0 0 0 3.5%;
 }
 

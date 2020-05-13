@@ -3,10 +3,11 @@
 @import "mixins.scss";
 @import "fonts.scss";
 @import "base.scss";
+@import "page-wrapper.scss";
 @import "header/header.scss";
 @import "header/blocks/main-nav.scss";
 @import "header/blocks/site-list.scss";
-@import "header/blocks/toggle";
+@import "header/blocks/toggle.scss";
 @import "header/blocks/logo.scss";
 @import "main/promo.scss";
 @import "main/introduction.scss";
@@ -33,5 +34,5 @@
 @import "main/form/blocks/attractions.scss";
 @import "main/form/blocks/checkbox.scss";
 @import "main/form/blocks/review.scss";
-@import "modal.scss";
+@import "modal-ok.scss";
 @import "modal-error.scss";

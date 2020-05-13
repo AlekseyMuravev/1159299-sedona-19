@@ -6,6 +6,7 @@
   @media (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
+    background-color: $palette-site;
   }
 }
 
@@ -13,7 +14,9 @@
   width: auto;
   text-align: center;
   background-color: $palette-primary;
-  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+  box-shadow:
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.2),
+    0 -1px 0 0 #678fa8;
 
   @media (max-width: 767px) {
     &:hover {
@@ -34,9 +37,9 @@
   }
 
   @media (min-width: $tablet) {
-    width: 19.9%;
+    width: 20.9%;
     background-color: $color-text-on-primary;
-    border-bottom: none;
+    border: none;
   }
 
   @media (min-width: $tablet) {
@@ -68,13 +71,22 @@
   }
 }
 
+.site-list__item:last-of-type {
+  @media (max-width: 767px) {
+    box-shadow:
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.2),
+      0 -1px 0 0 #678fa8,
+      inset 0 -2px 2px rgba(0, 0, 0, 0.2);
+  }
+}
+
 .site-list__item a {
   display: block;
   font-size: $font-size-heading-mobile;
   font-weight: bold;
   line-height: 40px;
   color: $color-text-on-primary;
-  padding: 8px 0 7px;
+  padding: 9px 0 7px;
 
   @media (max-width: 767px) {
     &:active {

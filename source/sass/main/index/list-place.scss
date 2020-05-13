@@ -27,20 +27,21 @@
 
 .list-place__image {
   width: 100%;
-  min-height: 260px;
+  height: 260px;
+  background-color: #a08075;
 
   @media (min-width: $tablet) {
     line-height: 0;
     width: 66.67%;
     height: 256px;
-    background-color: $palette-secondary;
+    background-color: #a08075;
   }
 
   @media (min-width: $desktop) {
     line-height: 0;
     width: 800px;
     height: 256px;
-    background-color: $palette-secondary;
+    background-color: #a08075;
   }
 }
 
