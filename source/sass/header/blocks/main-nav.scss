@@ -20,12 +20,12 @@
 @keyframes main-nav-open {
   0% {
     position: absolute;
+    top: 0;
     width: 100%;
   }
 
   100% {
     position: absolute;
-    top: 0;
     z-index: 2;
     width: 100%;
   }
