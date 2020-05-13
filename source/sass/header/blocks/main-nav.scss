@@ -1,8 +1,31 @@
 .main-nav {
   width: auto;
   padding: 0;
+
+  &--hide {
+    display: none;
+  }
+
+  &--open {
+    animation-name: main-nav-open;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+  }
 }
 
 .main-nav__list {
   margin: 0;
+}
+
+@keyframes main-nav-open {
+  from {
+    position: absolute;
+    width: 100%;
+  }
+
+  to {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+  }
 }

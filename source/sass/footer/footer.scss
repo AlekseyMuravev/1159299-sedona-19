@@ -1,7 +1,7 @@
 .footer {
   min-width: $mobile;
   text-align: center;
-  padding: 36px 80px;
+  padding: 36px 80px 16px;
   background-color: $color-text-on-primary;
 
   @media (min-width: $tablet) {

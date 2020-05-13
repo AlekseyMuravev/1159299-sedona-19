@@ -1,83 +1,162 @@
 .toggle {
-  @media (max-width: $tablet) {
-    width: 23px;
-    height: 21px;
-    border: none;
-    background-color: transparent;
-    padding: 0;
-  }
+  width: 23px;
+  height: 21px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
 
   @media (min-width: $tablet) {
     display: none;
   }
+
+  &--hide {
+    display: none;
+  }
 }
 
-.toggle__line {
+.toggle__line-top {
   display: block;
-  border: 2px solid $color-text-on-primary;
+  border: 2px solid $palette-primary;
   width: 23px;
-  background-color: $color-text-on-primary;
-  animation-name: toggle-x-center;
+  background-color: $palette-primary;
+  margin-bottom: 5px;
+}
+
+.toggle__line-middle {
+  display: block;
+  border: 2px solid $palette-primary;
+  width: 23px;
+  background-color: $palette-primary;
+  margin-bottom: 5px;
+}
+
+.toggle__line-bottom {
+  display: block;
+  border: 2px solid $palette-primary;
+  width: 23px;
+  background-color: $palette-primary;
+}
+
+.toggle__line-top-open {
+  animation-name: toggle-open-top;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
+}
 
-  &::before {
-    content: "";
-    border: 2px solid $color-text-on-primary;
-    width: 23px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: $color-text-on-primary;
-    animation-name: toggle-x-left;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+.toggle__line-middle-open {
+  animation-name: toggle-open-center;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.toggle__line-bottom-open {
+  animation-name: toggle-open-bottom;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.toggle__line-top-close {
+  animation-name: toggle-close-top;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.toggle__line-middle-close {
+  animation-name: toggle-close-center;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.toggle__line-bottom-close {
+  animation-name: toggle-close-bottom;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes toggle-open-top {
+  from {
+    transform: rotate(0);
   }
 
-  &::after {
-    content: "";
-    border: 2px solid $color-text-on-primary;
-    width: 23px;
-    position: absolute;
-    top: 16px;
-    right: 0;
+  10% {
+    transform: translateY(8px);
+  }
+
+  to {
+    transform: translateY(8px) rotate(-45deg);
     background-color: $color-text-on-primary;
-    animation-name: toggle-x-right;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+    border: 2px solid $color-text-on-primary;
   }
 }
 
-// @keyframes toggle-x-center {
-//   from {
-//     display: block;
-//   }
-//   to {
-//     border: none;
-//     background-color: transparent;
-//   }
-// }
+@keyframes toggle-close-top {
+  from {
+    transform: translateY(8px) rotate(-45deg);
+  }
 
-// @keyframes toggle-x-left {
-//   from {
-//     transform: rotate(0);
-//   }
-//   10% {
-//     transform: translateY(10px);
-//   }
-//   to {
-//     transform: translateY(10px) rotate(45deg);
-//   }
-// }
+  10% {
+    transform: translateY(8px);
+  }
 
-// @keyframes toggle-x-right {
-//   from {
-//     transform: rotate(0);
-//   }
-//   10% {
-//     transform: translateY(-6px);
-//   }
-//   to {
-//     transform: translateY(-6px) rotate(-45deg);
-//   }
-// }
+  to {
+    transform: rotate(0);
+    background-color: $palette-primary;
+    border: 2px solid $palette-primary;
+  }
+}
+
+@keyframes toggle-open-center {
+  from {
+    border: 2px solid $color-text-on-primary;
+    background-color: $color-text-on-primary;
+  }
+
+  to {
+    border: 2px solid transparent;
+    background-color: transparent;
+  }
+}
+
+@keyframes toggle-close-center {
+  from {
+    border: 2px solid transparent;
+    background-color: transparent;
+  }
+
+  to {
+    background-color: $palette-primary;
+    border: 2px solid $palette-primary;
+  }
+}
+
+@keyframes toggle-open-bottom {
+  from {
+    transform: rotate(0);
+  }
+
+  10% {
+    transform: translateY(-10px);
+  }
+
+  to {
+    transform: translateY(-10px) rotate(45deg);
+    background-color: $color-text-on-primary;
+    border: 2px solid $color-text-on-primary;
+  }
+}
+
+@keyframes toggle-close-bottom {
+  from {
+    transform: translateY(-10px) rotate(45deg);
+  }
+
+  10% {
+    transform: translateY(-10px);
+  }
+
+  to {
+    transform: rotate(0);
+    background-color: $palette-primary;
+    border: 2px solid $palette-primary;
+  }
+}
