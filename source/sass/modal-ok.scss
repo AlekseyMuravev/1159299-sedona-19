@@ -1,15 +1,14 @@
-.modal {
+.modal-ok {
   @include modal;
   width: 100%;
   padding: 46px 0 0;
 
   @media (min-width: $tablet) {
-      width: 640px;
+    width: 640px;
   }
 }
 
-
-.modal h2 {
+.modal-ok h2 {
   font-size: $font-size-heading-mobile;
   width: 247px;
   margin: 0 auto 30px;
@@ -21,7 +20,7 @@
   }
 }
 
-.modal p {
+.modal-ok p {
   font-size: $font-size-paragraph;
   line-height: 24px;
   width: 246px;
@@ -33,12 +32,12 @@
   }
 }
 
-.modal__wrapper-button {
+.modal-ok__wrapper-button {
   background-color: #f2f2f2;
   padding: 20px 0;
 }
 
-.modal__button {
+.modal-ok__button {
   @include button;
   margin: 0 auto;
 

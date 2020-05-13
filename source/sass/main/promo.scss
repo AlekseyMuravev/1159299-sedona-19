@@ -15,15 +15,15 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background:
-    url("../img/bg-intro-triangle-mobile.svg") no-repeat,
-    url("../img/bg-back-mobile@2x.jpg") no-repeat;
-  background-position:
-    0 100.4%,
-    50% 100%;
-  background-color: $palette-primary;
-  background-size:
-    100% auto,
-    240%;
+      url("../img/bg-intro-triangle-mobile.svg") no-repeat,
+      url("../img/bg-back-mobile@2x.jpg") no-repeat;
+    background-position:
+      0 100.4%,
+      50% 100%;
+    background-color: $palette-primary;
+    background-size:
+      100% auto,
+      240%;
   }
 
   @media (min-width: $tablet) {
@@ -94,15 +94,15 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background:
-      url("../img/bg-intro-triangle-mobile.svg") no-repeat,
-      url("../img/bg-back-mobile@2x.jpg") no-repeat;
-    background-position:
-      0 100.2%,
-      50% 0;
-    background-color: $palette-primary;
-    background-size:
-      100% auto,
-      cover;
+        url("../img/bg-intro-triangle-mobile.svg") no-repeat,
+        url("../img/bg-back-mobile@2x.jpg") no-repeat;
+      background-position:
+        0 100.2%,
+        50% 0;
+      background-color: $palette-primary;
+      background-size:
+        100% auto,
+        cover;
     }
 
     @media (min-width: $tablet) {

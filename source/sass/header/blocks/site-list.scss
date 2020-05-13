@@ -6,6 +6,7 @@
   @media (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
+    background-color: $palette-site;
   }
 }
 
@@ -36,9 +37,9 @@
   }
 
   @media (min-width: $tablet) {
-    width: 19.9%;
+    width: 20.9%;
     background-color: $color-text-on-primary;
-    border-bottom: none;
+    border: none;
   }
 
   @media (min-width: $tablet) {

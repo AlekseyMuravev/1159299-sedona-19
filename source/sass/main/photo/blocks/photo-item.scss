@@ -52,11 +52,15 @@
 }
 
 .photo-item__image {
-  max-width: 100%;
+  width: 100%;
+  min-height: 280px;
+
   line-height: 0;
   margin-bottom: 15px;
+  background-color: #756b36;
 
   @media (min-width: $tablet) {
+    min-height: 267px;
     margin: 0;
   }
 }

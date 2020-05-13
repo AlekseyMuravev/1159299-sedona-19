@@ -1,13 +1,19 @@
 .modal-error {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   @include modal;
   padding: 46px 40px 35px;
 
   @media (min-width: $tablet) {
-      width: 400px;
+    width: 400px;
+  }
+
+  &--hide {
+    display: none;
   }
 }
-
-
 
 .modal-error > h2 {
   font-size: $font-size-heading-mobile;
