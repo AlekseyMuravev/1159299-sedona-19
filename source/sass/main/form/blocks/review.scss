@@ -55,8 +55,6 @@
   &:focus {
     background-color: #ffffff;
     outline: none;
-    box-shadow:
-      inset 1px 1px 0 3px #e5e5e5,
-      inset -1px -1px 0 3px #e5e5e5;
+    outline: 3px solid #e5e5e5;
   }
 }
