@@ -47,8 +47,8 @@
   background:
     url("../img/icon-radio.svg") no-repeat,
     #f2f2f2;
-  background-size: 33px 33px;
   background-position: center;
+  background-size: 33px 33px;
   border-radius: 50%;
 }
 
@@ -66,4 +66,8 @@
     #d5d5d5;
   background-position: center;
   background-size: 33px 33px;
+}
+
+.radio__input:focus + .radio__label::before {
+  box-shadow: 0 0 0 2px rgba(109, 167, 253, 0.993);
 }

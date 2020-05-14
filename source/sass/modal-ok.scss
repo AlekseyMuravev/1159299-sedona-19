@@ -6,6 +6,10 @@
   @media (min-width: $tablet) {
     width: 640px;
   }
+
+  &--hide {
+    display: none;
+  }
 }
 
 .modal-ok h2 {

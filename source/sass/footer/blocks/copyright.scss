@@ -1,13 +1,26 @@
 .copyright {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  width: 140px;
+  align-self: flex-start;
+  width: 154px;
+  padding: 0 5px;
+
+  @media (min-width: $tablet) {
+    justify-content: flex-end;
+    align-self: flex-start;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+  }
 }
 
 .copyright p {
   font-size: $font-size-paragraph;
   margin-top: 2px;
+  @media (min-width: $tablet) {
+    margin: 2px 12px 0 0;
+  }
 }
 
 .copyright__icon-logo-htmlacademy {
