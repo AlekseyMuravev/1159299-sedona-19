@@ -21,16 +21,16 @@
     @media (max-width: 767px) {
       padding: 18.15% 12px 25px;
 
-    &::before {
-      content: "";
-      position: absolute;
-      background: url("../img/bg-triangle.svg") no-repeat;
-      background-size: 100% 100%;
-      background-position: 100% 100%;
-      top: -18px;
-      right: 0;
-      left: 0;
-      padding-bottom: 12%;
+      &::before {
+        content: "";
+        position: absolute;
+        background: url("../img/bg-triangle.svg") no-repeat;
+        background-size: 100% 100%;
+        background-position: 100% 100%;
+        top: -18px;
+        right: 0;
+        left: 0;
+        padding-bottom: 12%;
       }
     }
   }
@@ -80,7 +80,7 @@
   @media (min-width: $desktop) {
     font-size: $font-size-paragraph;
     line-height: $line-height-paragraph;
-    width: 280px;
+    width: 275px;
     margin-bottom: 22px;
   }
 }

@@ -41,17 +41,17 @@
     27px 27px,
     100% 100%;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-map-mobile@2x.jpg");
-    }
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+  }
 
   @media (min-width: $tablet) {
-  background:
-    url("../img/icon-map-marker.svg") no-repeat center,
-    url("../img/bg-map-tablet@1x.jpg") no-repeat;
+    background:
+      url("../img/icon-map-marker.svg") no-repeat center,
+      url("../img/bg-map-tablet@1x.jpg") no-repeat;
     background-size:
-    27px 27px,
-    100% 100%;
+      27px 27px,
+      100% 100%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-map-tablet@2x.jpg");
@@ -59,12 +59,12 @@
   }
 
   @media (min-width: $desktop) {
-  background:
-    url("../img/icon-map-marker.svg") no-repeat center,
-    url("../img/bg-map-desktop@1x.jpg") no-repeat;
+    background:
+      url("../img/icon-map-marker.svg") no-repeat center,
+      url("../img/bg-map-desktop@1x.jpg") no-repeat;
     background-size:
-    27px 27px,
-    100% 100%;
+      27px 27px,
+      100% 100%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-map-desktop@2x.jpg");

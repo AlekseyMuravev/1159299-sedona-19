@@ -18,6 +18,7 @@
 .copyright p {
   font-size: $font-size-paragraph;
   margin-top: 2px;
+
   @media (min-width: $tablet) {
     margin: 2px 12px 0 0;
   }
