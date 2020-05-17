@@ -75,3 +75,11 @@
     #d5d5d5;
   background-position: center;
 }
+
+.checkbox__input:disabled + .checkbox__label::before {
+  background: #d5d5d5;
+}
+
+.checkbox__input:focus + .checkbox__label::before {
+  box-shadow: 0 0 0 2px rgba(109, 167, 253, 0.993);
+}

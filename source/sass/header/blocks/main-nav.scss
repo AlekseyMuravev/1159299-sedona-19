@@ -7,6 +7,9 @@
   }
 
   &--open {
+    position: absolute;
+    top: 0;
+    z-index: 2;
     animation-name: main-nav-open;
     animation-duration: 0.1s;
     animation-fill-mode: forwards;
@@ -18,14 +21,11 @@
 }
 
 @keyframes main-nav-open {
-  from {
-    position: absolute;
+  0% {
     width: 100%;
   }
 
-  to {
-    position: absolute;
-    z-index: 2;
+  100% {
     width: 100%;
   }
 }

@@ -1,10 +1,18 @@
 .modal-ok {
   @include modal;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
   padding: 46px 0 0;
 
   @media (min-width: $tablet) {
     width: 640px;
+  }
+
+  &--hide {
+    display: none;
   }
 }
 

@@ -41,7 +41,7 @@
   font-weight: bold;
   color: $color-heading;
   max-width: 434px;
-  margin: 0 auto 25px;
+  margin: 0 auto 27px;
 
   @media (min-width: $tablet) {
     font-size: $line-height-heading + 4px;
@@ -71,6 +71,6 @@
   margin: 0 auto 10px;
 
   @media (min-width: $tablet) {
-    max-width: 490px;
+    max-width: 485px;
   }
 }
