@@ -104,8 +104,8 @@
     outline: 3px solid #e5e5e5;
   }
 
-  &--error {
-    border: 2px solid red;
+  &:invalid {
+    outline: 2px solid red;
   }
 }
 

@@ -12,14 +12,13 @@ let inputPhone = document.querySelector(".input-phone");
 let inputEmail = document.querySelector(".input-email");
 
 // form.addEventListener("submit", function (evt) {
-//   if (!inputName.value || !inputSurname.value) {
-//     evt.preventDefault();
+//   evt.preventDefault();
+//   if (!inputName.value || !inputSurname.value || !inputPhone.value || !inputEmail.value) {
 //     modalError.remove("modal-error--hide");
-//     if (!inputName.value) {
-//       inputName.classList.add("text-input__input--error")
-//     };
-//     if (!inputSurname.value) {
-//       inputSurname.classList.add("text-input__input--error")
-//     };
 //   }
 // })
+
+modalOkButton.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  modalOk.classList.add("modal-ok--hide");
+})

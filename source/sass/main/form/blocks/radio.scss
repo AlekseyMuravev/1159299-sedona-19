@@ -68,6 +68,10 @@
   background-size: 33px 33px;
 }
 
+.radio__input:disabled + .radio__label::before {
+  background: #d5d5d5;
+}
+
 .radio__input:focus + .radio__label::before {
   box-shadow: 0 0 0 2px rgba(109, 167, 253, 0.993);
 }
