@@ -1,21 +1,21 @@
 "use strict";
 
-let mainNav = document.querySelector(".main-nav");
-let toggle = document.querySelector(".toggle");
-let toggleLineTop = document.querySelector(".toggle__line-top");
-let toggleLineMiddle = document.querySelector(".toggle__line-middle");
-let toggleLineBottom = document.querySelector(".toggle__line-bottom");
+var mainNav = document.querySelector(".main-nav");
+var toggle = document.querySelector(".toggle");
+var toggleLineTop = document.querySelector(".toggle__line-top");
+var toggleLineMiddle = document.querySelector(".toggle__line-middle");
+var toggleLineBottom = document.querySelector(".toggle__line-bottom");
 
-let modalOk = document.querySelector(".modal-ok");
-let modalOkButton = document.querySelector(".modal-ok__button");
-let modalError = document.querySelector(".modal-error");
-let modalErrorButton = document.querySelector(".modal-error__button");
+var modalOk = document.querySelector(".modal-ok");
+var modalOkButton = document.querySelector(".modal-ok__button");
+var modalError = document.querySelector(".modal-error");
+var modalErrorButton = document.querySelector(".modal-error__button");
 
-let form = document.querySelector(".form");
-let inputName = document.querySelector(".input-name");
-let inputSurname = document.querySelector(".input-surname");
-let inputPhone = document.querySelector(".input-phone");
-let inputEmail = document.querySelector(".input-email");
+var form = document.querySelector(".form");
+var inputName = document.querySelector(".input-name");
+var inputSurname = document.querySelector(".input-surname");
+var inputPhone = document.querySelector(".input-phone");
+var inputEmail = document.querySelector(".input-email");
 
 toggle.classList.remove("toggle--hide");
 
