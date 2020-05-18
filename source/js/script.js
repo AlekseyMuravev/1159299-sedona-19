@@ -49,14 +49,15 @@ toggle.addEventListener("click", function (evt) {
 modalOkButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   if (!modalOk.classList.contains("modal-ok--hide")) {
-    modalOk.classList.add("modal-ok--hide")
+    modalOk.classList.add("modal-ok--hide");
+    form.submit()
   };
 })
 
 modalErrorButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   if (!modalError.classList.contains("modal-error--hide")) {
-    modalError.classList.add("modal-error--hide")
+    modalError.classList.add("modal-error--hide");
   };
 })
 
