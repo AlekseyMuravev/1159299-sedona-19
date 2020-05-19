@@ -15,7 +15,7 @@
   }
 
   @media (min-width: $desktop) {
-    justify-content: space-between;
+    justify-content: flex-start;
     border-top: 1px solid rgba(1, 1, 1, 0.2);
     padding: 70px 0 30px;
   }
