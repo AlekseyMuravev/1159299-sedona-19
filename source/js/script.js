@@ -67,5 +67,17 @@ form.addEventListener("submit", function (evt) {
     modalOk.classList.remove("modal-ok--hide");
   } else {
     modalError.classList.remove("modal-error--hide");
+    if (!inputName.value) {
+      inputName.classList.add("text-input__input--invalid")
+    };
+    if (!inputSurname.value) {
+      inputSurname.classList.add("text-input__input--invalid")
+    };
+    if (!inputPhone.value) {
+      inputPhone.classList.add("text-input__input--invalid")
+    };
+    if (!inputEmail.value) {
+      inputEmail.classList.add("text-input__input--invalid")
+    };
   }
 })

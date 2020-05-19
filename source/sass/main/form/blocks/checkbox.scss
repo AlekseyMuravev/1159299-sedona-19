@@ -17,6 +17,24 @@
   }
 }
 
+.checkbox:nth-of-type(4n-2) {
+  @media (min-width: $desktop) {
+    margin-left: 50px;
+  }
+}
+
+.checkbox:nth-of-type(4n-1) {
+  @media (min-width: $desktop) {
+    margin-left: 52px;
+  }
+}
+
+.checkbox:nth-of-type(4n) {
+  @media (min-width: $desktop) {
+    margin-left: 32px;
+  }
+}
+
 .checkbox__input {
   @include input-none;
 }

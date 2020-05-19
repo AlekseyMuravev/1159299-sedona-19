@@ -75,16 +75,17 @@
         <div class="form__block form-block form-block--name">
           <h2>Представьтесь:</h2>
           <div class="form-block__wraper text-input">
-            <label class="text-input__label">Имя*:</label>
-            <input class="text-input__input input-name" type="text" name="name" value="Петр" required>
+            <label class="text-input__label" for="name">Имя*:</label>
+            <input class="text-input__input input-name" type="text" name="name" id="name" value="Петр" required>
           </div>
           <div class="form-block__wraper text-input">
-            <label class="text-input__label">Фамилия*:</label>
-            <input class="text-input__input input-surname" type="text" name="surname" value="Иванов" required>
+            <label class="text-input__label" for="surname">Фамилия*:</label>
+            <input class="text-input__input input-surname" type="text" name="surname" id="surname" value="Иванов"
+              required>
           </div>
           <div class="form-block__wraper text-input">
-            <label class="text-input__label">Отчество:</label>
-            <input class="text-input__input" type="text" name="patronymic" value="Александрович">
+            <label class="text-input__label" for="patronymic">Отчество:</label>
+            <input class="text-input__input" type="text" name="patronymic" id="patronymic" value="Александрович">
           </div>
         </div>
         <div class="form__block form-block form-block--contact">
@@ -178,7 +179,7 @@
       <button class="modal-error__button" type="button">Ок</button>
     </div>
   </div>
-  <script src="js/script-min.js"></script>
+  <script src="js/script.js"></script>
   <script src="js/picturefill-min.js"></script>
 </body>
 

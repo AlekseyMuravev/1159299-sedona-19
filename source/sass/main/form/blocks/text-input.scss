@@ -104,9 +104,15 @@
     outline: 3px solid #e5e5e5;
   }
 
-  &:invalid {
+  &:focus:invalid {
     outline: 2px solid red;
+    outline-offset: 1px;
   }
+}
+
+.text-input__input--invalid {
+  outline: 2px solid red;
+  outline-offset: 1px;
 }
 
 .form-block--contact > .text-input {
