@@ -14,11 +14,12 @@
 }
 
 .search__button a {
+  @include button;
+
+  font-size: $font-size-heading-tablet;
   margin: 0 auto 49px;
   display: flex;
   justify-content: center;
-
-  @include button;
 
   @media (min-width: $tablet) {
     width: 458px;

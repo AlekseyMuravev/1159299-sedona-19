@@ -19,7 +19,7 @@
 
 .checkbox:nth-of-type(4n-2) {
   @media (min-width: $desktop) {
-    margin-left: 50px;
+    margin-left: 52px;
   }
 }
 
@@ -43,7 +43,11 @@
   @include radio-checkbox-label;
 
   width: 310px;
-  padding-left: 30%;
+  padding-left: 28%;
+
+  @media (min-width: $tablet) {
+    padding-left: 33%;
+  }
 
   @media (min-width: $desktop) {
     padding-left: 65px;
@@ -53,12 +57,16 @@
 .checkbox__label::before {
   content: "";
   position: absolute;
-  top: -2px;
+  top: -4px;
   left: 0;
   width: 56px;
   height: 56px;
   background-color: #f2f2f2;
   border-radius: 3px;
+
+  @media (min-width: $desktop) {
+    top: 0;
+  }
 }
 
 

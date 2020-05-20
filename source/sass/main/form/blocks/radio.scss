@@ -18,14 +18,14 @@
   }
 
   @media (min-width: $desktop) {
-    padding: 14px 0 0 84px;
+    padding: 14px 0 0 76px;
   }
 }
 
 .radio__label::before {
   content: "";
   position: absolute;
-  top: -2px;
+  top: -4px;
   left: 0;
   width: 56px;
   height: 56px;
@@ -48,7 +48,7 @@
     url("../img/icon-radio.svg") no-repeat,
     #f2f2f2;
   background-position: center;
-  background-size: 33px 33px;
+  background-size: 34px 34px;
   border-radius: 50%;
 }
 
@@ -57,7 +57,7 @@
     url("../img/icon-radio.svg") no-repeat,
     #e5e5e5;
   background-position: center;
-  background-size: 33px 33px;
+  background-size: 34px 34px;
 }
 
 .radio__input:checked + .radio__label:active::before {
@@ -65,7 +65,7 @@
     url("../img/icon-radio-active.svg") no-repeat,
     #d5d5d5;
   background-position: center;
-  background-size: 33px 33px;
+  background-size: 34px 34px;
 }
 
 .radio__input:disabled + .radio__label::before {
