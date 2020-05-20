@@ -1,7 +1,7 @@
 .attractions {
   position: relative;
   width: 100%;
-  padding: 20px 6% 0;
+  padding: 18px 6% 0;
   border: none;
   border-bottom: 1px solid rgba(1, 1, 1, 0.2);
 
@@ -17,19 +17,27 @@
   @media (min-width: $desktop) {
     justify-content: flex-start;
     border-top: 1px solid rgba(1, 1, 1, 0.2);
-    padding: 70px 0 30px;
+    padding: 68px 0 35px;
   }
 }
 
 .attractions__checkbox-wraper {
-  margin: 0 0 54px 0;
+  padding-top: 3px;
+  margin: 0 0 51px 0;
 
   &:last-of-type {
-    margin: 0 0 42px 0;
+    margin: 0 0 41px 0;
   }
 
   @media (min-width: $tablet) {
-    margin: 0 0 63px 0;
+    padding-top: 0;
+    margin: 0 0 60px 0;
+  }
+}
+
+.attractions__checkbox-wraper:nth-of-type(2n) {
+  @media (min-width: $tablet) {
+    margin: 0 0 60px -9px;
   }
 }
 
